@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>DND (Assistant)</title>
+</head>
+
+<div id="Background"></div>
+<div id="background"></div>
+
+<body>
+    <div class="header">
+        <div class="Margin">Code Entry:</div>
+        <input id="code"></input>
+        <br>
+        <div class="dropdown" data-dropdown>
+            <!--Biome Dropdown-->
+            <button class="link" data-dropdown-button>Biome []</button>
+            <div class="dropdown-menu information-grid">
+                Dropdown Content
+            </div>
+        </div>
+        <div class="dropdown" data-dropdown>
+            <!--Creature Dropdown-->
+            <button class="link" data-dropdown-button>Creature []</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <button class="options">Goblin</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown" data-dropdown>
+            <!--Amount Dropdown-->
+            <button class="link" data-dropdown-button>Amount []</button>
+            <div class="dropdown-menu information-grid">
+                Dropdown Content
+            </div>
+        </div>
+    </div>
+    <div id="InformationTable">
+        <h1 id="Info">Information:</h1>
+        <br>
+        <h3 class="Margin" id="Text1"></h3>
+        <h3 class="Margin" id="Text2"></h3>
+        <h3 class="Margin" id="Text3"></h3>
+        <h3 class="Margin" id="Text4"></h3>
+        <h3 class="Margin" id="Text5"></h3>
+        <h3 class="Margin" id="Text6"></h3>
+        <h3 class="Margin" id="Text7"></h3>
+        <h3 class="Margin" id="Text8"></h3>
+        <h3 class="Margin" id="Text9"></h3>
+        <h3 class="Margin" id="Text10"></h3>
+        <h3 class="Margin" id="Text11"></h3>
+        <h3 class="Margin" id="Text12"></h3>
+    </div>
+    <div id="total-block">
+        <h3 id="total">Total:</h3>
+    </div>
+</body>
+<!--Animal Charts-->
+<script src="js/LootCharts/AnimalCharts/animalLootCharts.js"></script>
+
+<!--Enemy Charts-->
+<script src="js/LootCharts/EnemyCharts/enemyLootCharts.js"></script>
+<script src="js/LootCharts/EnemyCharts/forestEnemyLootCharts.js"></script>
+
+<!--Magic Item Charts-->
+<script src="js/LootCharts/MagicItemCharts/magicalLootCharts.js"></script>
+
+<!--Material Charts-->
+<script src="js/LootCharts/MaterialCharts/materialLootCharts.js"></script>
+<script src="js/LootCharts/MaterialCharts/forestMaterialLootCharts.js"></script>
+<script src="js/LootCharts/MaterialCharts/grasslandMaterialLootCharts.js"></script>
+<script src="js/LootCharts/MaterialCharts/caveMaterialLootCharts.js"></script>
+
+<!--Plantlife Charts-->
+<script src="js/LootCharts/MaterialCharts/plantLifeLootCharts.js"></script>
+
+<!--Recipe Charts-->
+<script src="js/LootCharts/RecipeCharts/magicalRecipeLootCharts.js"></script>
+<script src="js/LootCharts/RecipeCharts/weaponRecipeLootCharts.js"></script>
+
+<!--Storage Charts-->
+<script src="js/LootCharts/StorageCharts/storageLootCharts.js"></script>
+<script src="js/LootCharts/StorageCharts/forestStorageLootCharts.js"></script>
+<script src="js/LootCharts/StorageCharts/grasslandStorageLootCharts.js"></script>
+<script src="js/LootCharts/StorageCharts/caveStorageLootCharts.js"></script>
+
+<!--Weapon Charts-->
+<script src="js/LootCharts/WeaponCharts/weaponLootCharts.js"></script>
+
+<!--Other source scripts-->
+<script src="js/LootCharts/otherItemCharts.js"></script>
+<script src="js/LootCharts/liquids.js"></script>
+
+<script src="js/chartSelections.js"></script>
+<script src="js/variables.js"></script>
+<script src="js/callFunctions.js"></script>
+<script src="js/app.js"></script>
+
+</html>
