@@ -17,30 +17,52 @@
         <div class="Margin">Code Entry:</div>
         <input id="code"></input>
         <br>
+        <!--Biome Dropdown-->
         <div class="dropdown" data-dropdown>
-            <!--Biome Dropdown-->
-            <button class="link" data-dropdown-button>Biome []</button>
-            <div class="dropdown-menu information-grid">
-                Dropdown Content
-            </div>
-        </div>
-        <div class="dropdown" data-dropdown>
-            <!--Creature Dropdown-->
-            <button class="link" data-dropdown-button>Creature []</button>
+            <button class="link" data-dropdown-button id="biome-dropdown">Biome []</button>
             <div class="dropdown-menu information-grid">
                 <div>
                     <div class="dropdown-heading">Common</div>
                     <div class="dropdown-options">
-                        <button class="options">Goblin</button>
+                        <div class="options" onclick="setBiome(event)" id="none">None</div>
+                        <div class="options" onclick="setBiome(event)" id="forest">Forest</div>
+                        <div class="options" onclick="setBiome(event)" id="grassland">Grassland</div>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Creature Dropdown-->
         <div class="dropdown" data-dropdown>
-            <!--Amount Dropdown-->
-            <button class="link" data-dropdown-button>Amount []</button>
+            <button class="link" data-dropdown-button id="creature-dropdown">Creature []</button>
             <div class="dropdown-menu information-grid">
-                Dropdown Content
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setCreature(event)" id="none">None</div>
+                        <div class="options" onclick="setCreature(event)" id="goblin">Goblin</div>
+                        <div class="options" onclick="setCreature(event)" id="orc">Orc</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Amount Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="amount-dropdown">Amount []</button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-options">
+                    <div class="options" onclick="setAmount(event)" id="1">1</div>
+                    <div class="options" onclick="setAmount(event)" id="2">2</div>
+                    <div class="options" onclick="setAmount(event)" id="3">3</div>
+                    <div class="options" onclick="setAmount(event)" id="4">4</div>
+                    <div class="options" onclick="setAmount(event)" id="5">5</div>
+                </div>
+                <div class="dropdown-options">
+                    <div class="options" onclick="setAmount(event)" id="6">6</div>
+                    <div class="options" onclick="setAmount(event)" id="7">7</div>
+                    <div class="options" onclick="setAmount(event)" id="8">8</div>
+                    <div class="options" onclick="setAmount(event)" id="9">9</div>
+                    <div class="options" onclick="setAmount(event)" id="10">10</div>
+                </div>
             </div>
         </div>
     </div>
