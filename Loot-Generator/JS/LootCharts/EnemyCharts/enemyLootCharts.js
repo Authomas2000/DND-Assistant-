@@ -8,7 +8,7 @@ let zombieArray = [
 //Goblin Loot Chart (100) (incomplete) (ready to use)
 let goblinArray = [
     //Common (%80 chance to draw one of these items) 
-    { name: "Silver Pieces", minRarity: 1, maxRarity: 60, moreQty: 15},
+    { name: "Silver Pieces", minRarity: 0, maxRarity: 60, moreQty: 15},
     { name: "Iron Scimitar", minRarity: 60, maxRarity: 80, moreQty: 1},
 
     //Uncommon (%15 chance to draw one of these items) 

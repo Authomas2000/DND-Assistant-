@@ -3,6 +3,11 @@ body {
     color: black;
     width: 1515px;
     height: 700px;
+    z-index: +1;
+}
+
+button {
+    z-index: +1;
 }
 
 .Margin {
@@ -131,4 +136,8 @@ body {
     background-image: url("img/background.png");
     background-size: cover;
     z-index: -1;
+}
+
+#code{ 
+    z-index: +1;
 }

@@ -1,5 +1,4 @@
 { name: "forest goblin", lootDesc: "Corpse ", title: "Goblin Findings:", chart: forestGoblinArray },
-{ name: "orc", lootDesc: "Corpse ", title: "Orc Loot Findings:", chart: orcArray },
 { name: "forest orc", lootDesc: "Corpse ", title: "Orc Loot Findings:", chart: forestOrcArray },
 { name: "cultist", lootDesc: "Corpse ", title: "Cultist Findings:", chart: cultistArray },
 { name: "forest cultist", lootDesc: "Corpse ", title: "Cultist Findings:", chart: forestCultistArray },

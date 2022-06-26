@@ -36,4 +36,5 @@ let gemArray = [
 //Array for coins (41.1) (complete) (ready to use)
 let coinArray = [
     //common (%55 chance to draw one of
+    { name: "Gold Piece", minRarity: 1, maxRarity: 40, moreQty: 3 },
 ]
