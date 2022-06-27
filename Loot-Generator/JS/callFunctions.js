@@ -3,7 +3,9 @@ function resetVariables() {
     i = 0;
     while (i < infoArray.length){
         infoArray[i].loot = "";
-        infoArray[i].Qty = "";
+        infoArray[i].Qty = 0;
+        totalArray[i].loot = "";
+        totalArray[i].Qty = 0;
         i++
     }
     i = 0;
@@ -21,7 +23,7 @@ function getRandomArbitrary(min, max) {
 
 //Random number generator
 function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+    return Math.floor(Math.random() * max) + 1;
 }
 
 //Random number generator
