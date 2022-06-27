@@ -98,7 +98,6 @@ function start() {
               if (infoArray[i4].loot == "") {
                 infoArray[i4].loot = activeLoot.name;
                 let randomInt2 = getRandomInt(activeLoot.moreQty)
-                infoArray[i4].Qty = (randomInt2 + 1);
                 let relay = document.getElementById(infoArray[i4].name)
                 relay.innerHTML = activeLoot.name + " x" + (randomInt2 + 1)
                 break;
@@ -113,29 +112,4 @@ function start() {
     }
     i1++
   }
-  //total.innerHTML = total.innerHTML + totalArray[i2].loot + ","
-  i = 0;
-  while (i < 10) {
-    i2 = 0;
-    while(i2 < 10){
-      if(infoArray[i].loot == totalArray[i2].loot){
-        totalArray[i2].Qty = totalArray[i2].Qty + infoArray[i].Qty;
-        totalArray[i2].loot = infoArray[i].loot
-        break;
-      }else if (i2 == 0){
-        i3 = 0;
-        while(i3 < 10){
-          if (totalArray[i3].Qty == 0){
-            totalArray[i3].Qty = infoArray[i].Qty;
-            totalArray[i3].loot = infoArray[i].loot;
-            break;
-          }
-          i3++
-        }
-      }
-      i2++
-    }
-    i++
-  }
-  console.log(totalArray);
 }

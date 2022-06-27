@@ -4,8 +4,6 @@ function resetVariables() {
     while (i < infoArray.length){
         infoArray[i].loot = "";
         infoArray[i].Qty = "";
-        totalArray[i].loot = "";
-        totalArray[i].Qty = "";
         i++
     }
     i = 0;

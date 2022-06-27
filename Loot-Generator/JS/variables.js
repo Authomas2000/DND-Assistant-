@@ -11,7 +11,6 @@ let amount_dropdown = document.getElementById("amount-dropdown");
 let amount = 0;
 
 //other variables
-let total = document.getElementById("total");
 let activeLoot = {};
 let code = "";
 let i = 0;
@@ -24,28 +23,14 @@ let i6 = 0;
 
 //table for relaying loot to user
 let infoArray = [
-    { name: "Text1", loot: "", Qty: 0 },
-    { name: "Text2", loot: "", Qty: 0 },
-    { name: "Text3", loot: "", Qty: 0 },
-    { name: "Text4", loot: "", Qty: 0 },
-    { name: "Text5", loot: "", Qty: 0 },
-    { name: "Text6", loot: "", Qty: 0 },
-    { name: "Text7", loot: "", Qty: 0 },
-    { name: "Text8", loot: "", Qty: 0 },
-    { name: "Text9", loot: "", Qty: 0 },
-    { name: "Text10", loot: "", Qty: 0 },
-]
-
-//table for relaying loot to user
-let totalArray = [
-    { loot: "", Qty: 0 },
-    { loot: "", Qty: 0 },
-    { loot: "", Qty: 0 },
-    { loot: "", Qty: 0 },
-    { loot: "", Qty: 0 },
-    { loot: "", Qty: 0 },
-    { loot: "", Qty: 0 },
-    { loot: "", Qty: 0 },
-    { loot: "", Qty: 0 },
-    { loot: "", Qty: 0 },
+    { name: "Text1", loot: "", Qty: 0},
+    { name: "Text2", loot: "", Qty: 0},
+    { name: "Text3", loot: "", Qty: 0},
+    { name: "Text4", loot: "", Qty: 0},
+    { name: "Text5", loot: "", Qty: 0},
+    { name: "Text6", loot: "", Qty: 0},
+    { name: "Text7", loot: "", Qty: 0},
+    { name: "Text8", loot: "", Qty: 0},
+    { name: "Text9", loot: "", Qty: 0},
+    { name: "Text10", loot: "", Qty: 0},
 ]
