@@ -58,7 +58,7 @@ function start() {
 //function to see if code input is empty and if so, to use dropdown variables
 function checkForCodeInput(){
   if (code == "") {
-    if (biome == "") {
+    if (biome == "" || biome == "none") {
       code = creature;
     } else {
       code = biome + " " + creature;
@@ -156,12 +156,12 @@ function getTotal(){
    i = 0;
    while(i<10){
      if (totalArray[i].loot !== "") {
-       total.innerHTML = total.innerHTML + ", " + totalArray[i].loot + " x" + totalArray[i].Qty;
+       total.innerHTML = total.innerHTML + " || " + totalArray[i].loot + " x" + totalArray[i].Qty;
      }
      console.log(totalArray[i].loot)
      i++
    }
  
-   total.innerHTML = "Total: " + total.innerHTML;
+   total.innerHTML = "Total: " + total.innerHTML + " ||";
    console.log(totalArray);
 }

@@ -97,9 +97,14 @@ button {
     color: red;
 }
 
+#Info {
+    border-bottom: solid;
+}
+
 #InformationTable {
     color: white;
     height: 571px;
+    text-align: center;
 }
 
 #total-block {
@@ -116,17 +121,13 @@ button {
     margin-top: 10px;
 }
 
-#Info {
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-    margin-left: 20px;
-}
-
 #Background{
     width: 1515px;
     height: 700px;
     position: absolute;
+    background-color: black;
+    z-index: -1;
+    opacity: .3;
 }
 
 #background{ 
@@ -135,7 +136,7 @@ button {
     position: absolute;
     background-image: url("img/background.png");
     background-size: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
 #code{ 
