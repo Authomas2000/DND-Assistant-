@@ -10,6 +10,7 @@ function resetVariables() {
         relay.innerHTML = infoArray[i].loot;
         i++
     }
+    total.innerHTML = "";
     i = 0;
     i1 = 0;
     i2 = 0;
@@ -40,3 +41,5 @@ function getMaxInt(array) {
     let max = array[i-1].maxRarity;
     return max;
 }
+
+

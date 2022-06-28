@@ -11,6 +11,7 @@ let amount_dropdown = document.getElementById("amount-dropdown");
 let amount = 0;
 
 //other variables
+let total = document.getElementById("total");
 let activeLoot = {};
 let activeLootTable = [];
 let activeLootTable2 = [];

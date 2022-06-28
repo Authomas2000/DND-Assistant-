@@ -45,7 +45,18 @@ function start() {
   //set code to equal code input
   code = document.getElementById("code").value;
 
-  //check to see if code input is empty and if so, to use dropdown variables
+  //call function to see if code input is empty and if so, to use dropdown variables
+  checkForCodeInput()
+
+  //call function to randomize loot 
+  randomizeLoot()
+
+  //call function to get total and display it
+  getTotal()
+}
+
+//function to see if code input is empty and if so, to use dropdown variables
+function checkForCodeInput(){
   if (code == "") {
     if (biome == "") {
       code = creature;
@@ -53,85 +64,104 @@ function start() {
       code = biome + " " + creature;
     }
   }
-
-//while loop counting down chart length
-while (i1 < chartArray.length) {
-  
-  if (code == chartArray[i1].name) {
-    activeLootTable = chartArray[i1].chart;
-    maxInt = getMaxInt(activeLootTable);
-    i2 = 0;
-
-    
-    while (i2 < amount) {
-      randomInt = getRandomArbitrary(0, maxInt)
-
-      i3 = 0;
-      while (i3 < activeLootTable.length) {
-
-        if (randomInt >= activeLootTable[i3].minRarity && randomInt <= activeLootTable[i3].maxRarity) {
-          i4 = 0; //reset i4 variable
-
-          activeLoot = activeLootTable[i3]; // set activeLoot array to whatever array was selected
-          randomQty = getRandomIntBetween(activeLoot.minQty, activeLoot.maxQty)
-
-          //loop to check if there are chart references
-          while (i4 < 5) {
-            i5 = 0;
-            while (i5 < chartArray.length) {
-              if (activeLoot.name == chartArray[i5].name) {
-                activeLootTable2 = chartArray[i5].chart;
-                maxInt2 = getMaxInt(activeLootTable2);
-                randomInt2 = getRandomArbitrary(0, maxInt2)
-                i6 = 0;
-                while (i6 < activeLootTable2.length) {
-                  if (randomInt2 >= activeLootTable2[i6].minRarity && randomInt2 <= activeLootTable2[i6].maxRarity) {
-                    activeLoot = activeLootTable2[i6];
-                    randomQty2 = getRandomIntBetween(activeLoot.minQty, activeLoot.maxQty)
-                    randomQty = randomQty * randomQty2;
-                  }
-                  i6++
-                }
-              }
-              i5++
-            }
-            i4++
-          }
-        }
-        i3++
-      }
-      infoArray[i2].loot = activeLoot.name;
-      infoArray[i2].Qty = randomQty;
-      let relay = document.getElementById(infoArray[i2].name)
-      relay.innerHTML = activeLoot.name + " x" + (infoArray[i2].Qty)
-      i2++
-    }
-  }
-  i1++
 }
 
-  i = 0;
-  while (i < 10) {
-    i2 = 0;
-    while (i2 < 10) {
-      if (infoArray[i].loot == totalArray[i2].loot) {
-        totalArray[i2].Qty = totalArray[i2].Qty + infoArray[i].Qty;
-        totalArray[i2].loot = infoArray[i].loot
-        break;
-      } else if (i2 == 9) {
-        i3 = 0;
-        while (i3 < 10) {
-          if (totalArray[i3].Qty == 0) {
-            totalArray[i3].Qty = infoArray[i].Qty;
-            totalArray[i3].loot = infoArray[i].loot;
-            break;
+//function to randomize loot 
+function randomizeLoot(){
+    //while loop counting down chart length
+    while (i1 < chartArray.length) {
+
+      if (code == chartArray[i1].name) {
+        activeLootTable = chartArray[i1].chart;
+        maxInt = getMaxInt(activeLootTable);
+        i2 = 0;
+  
+  
+        while (i2 < amount) {
+          randomInt = getRandomArbitrary(0, maxInt)
+  
+          i3 = 0;
+          while (i3 < activeLootTable.length) {
+  
+            if (randomInt >= activeLootTable[i3].minRarity && randomInt <= activeLootTable[i3].maxRarity) {
+              i4 = 0; //reset i4 variable
+  
+              activeLoot = activeLootTable[i3]; // set activeLoot array to whatever array was selected
+              randomQty = getRandomIntBetween(activeLoot.minQty, activeLoot.maxQty)
+  
+              //loop to check if there are chart references
+              while (i4 < 5) {
+                i5 = 0;
+                while (i5 < chartArray.length) {
+                  if (activeLoot.name == chartArray[i5].name) {
+                    activeLootTable2 = chartArray[i5].chart;
+                    maxInt2 = getMaxInt(activeLootTable2);
+                    randomInt2 = getRandomArbitrary(0, maxInt2)
+                    i6 = 0;
+                    while (i6 < activeLootTable2.length) {
+                      if (randomInt2 >= activeLootTable2[i6].minRarity && randomInt2 <= activeLootTable2[i6].maxRarity) {
+                        activeLoot = activeLootTable2[i6];
+                        randomQty2 = getRandomIntBetween(activeLoot.minQty, activeLoot.maxQty)
+                        randomQty = randomQty * randomQty2;
+                      }
+                      i6++
+                    }
+                  }
+                  i5++
+                }
+                i4++
+              }
+            }
+            i3++
           }
-          i3++
+          infoArray[i2].loot = activeLoot.name;
+          infoArray[i2].Qty = randomQty;
+          let relay = document.getElementById(infoArray[i2].name)
+          relay.innerHTML = activeLoot.name + " x" + (infoArray[i2].Qty)
+          i2++
         }
       }
-      i2++
+      i1++
     }
-    i++
-  }
-  console.log(totalArray);
+}
+
+//function to get total and display it
+function getTotal(){
+   //get total for collected loot
+   i = 0;
+   while (i < 10) {
+     i2 = 0;
+     while (i2 < 10) {
+       if (infoArray[i].loot == totalArray[i2].loot) {
+         totalArray[i2].Qty = totalArray[i2].Qty + infoArray[i].Qty;
+         totalArray[i2].loot = infoArray[i].loot
+         break;
+       } else if (i2 == 9) {
+         i3 = 0;
+         while (i3 < 10) {
+           if (totalArray[i3].Qty == 0) {
+             totalArray[i3].Qty = infoArray[i].Qty;
+             totalArray[i3].loot = infoArray[i].loot;
+             break;
+           }
+           i3++
+         }
+       }
+       i2++
+     }
+     i++
+   }
+ 
+   //display total for collected loot
+   i = 0;
+   while(i<10){
+     if (totalArray[i].loot !== "") {
+       total.innerHTML = total.innerHTML + ", " + totalArray[i].loot + " x" + totalArray[i].Qty;
+     }
+     console.log(totalArray[i].loot)
+     i++
+   }
+ 
+   total.innerHTML = "Total: " + total.innerHTML;
+   console.log(totalArray);
 }
