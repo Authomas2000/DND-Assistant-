@@ -12,7 +12,16 @@ let amount = 0;
 
 //other variables
 let activeLoot = {};
+let activeLootTable = [];
+let activeLootTable2 = [];
 let code = "";
+let maxInt = 0;
+let maxInt2 = 0;
+let randomInt = 0;
+let randomInt2 = 0;
+let randomInt3 = 0;
+let randomQty = 0;
+let randomQty2 = 0;
 let i = 0;
 let i1 = 0;
 let i2 = 0;

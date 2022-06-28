@@ -6,6 +6,8 @@ function resetVariables() {
         infoArray[i].Qty = 0;
         totalArray[i].loot = "";
         totalArray[i].Qty = 0;
+        let relay = document.getElementById(infoArray[i].name);
+        relay.innerHTML = infoArray[i].loot;
         i++
     }
     i = 0;
@@ -19,6 +21,12 @@ function resetVariables() {
 //Random number between values
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
+}
+
+//Random number between values
+function getRandomIntBetween(min, max) {
+    let value = Math.random() * (max - min) + min;
+    return Math.round(value);
 }
 
 //Random number generator

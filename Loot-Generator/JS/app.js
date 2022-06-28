@@ -54,65 +54,61 @@ function start() {
     }
   }
 
-  //while loop counting down chart length
-  while (i1 < chartArray.length) {
-    //check to see if code is equal to chart array name and if so to get loot
-    if (code == chartArray[i1].name) {
-      let activeLootTable = chartArray[i1].chart;
-      let maxInt = getMaxInt(activeLootTable);
-      i2 = 0;
-      //while loop counting down from amount
-      while (i2 < amount) {
-        let randomInt = getRandomArbitrary(0, maxInt)
-        i3 = 0;
-        while (i3 < activeLootTable.length) {
-          if (randomInt >= activeLootTable[i3].minRarity && randomInt <= activeLootTable[i3].maxRarity) {
-            i4 = 0; //reset i4 variable
+//while loop counting down chart length
+while (i1 < chartArray.length) {
+  
+  if (code == chartArray[i1].name) {
+    activeLootTable = chartArray[i1].chart;
+    maxInt = getMaxInt(activeLootTable);
+    i2 = 0;
 
-            let activeLoot = activeLootTable[i3]; // set activeLoot array to whatever array was selected
+    
+    while (i2 < amount) {
+      randomInt = getRandomArbitrary(0, maxInt)
 
-            //loop to check if there are chart references
-            while (i4 < 5) {
-              i5 = 0;
-              while (i5 < chartArray.length) {
-                if (activeLoot.name == chartArray[i5].name) {
-                  activeLootTable = chartArray[i5].chart;
-                  maxInt = getMaxInt(activeLootTable);
-                  randomInt = getRandomArbitrary(0, maxInt)
-                  i6 = 0;
-                  while (i6 < activeLootTable.length) {
-                    if (randomInt >= activeLootTable[i6].minRarity && randomInt <= activeLootTable[i6].maxRarity) {
-                      activeLoot = activeLootTable[i6];
-                    }
-                    i6++
+      i3 = 0;
+      while (i3 < activeLootTable.length) {
+
+        if (randomInt >= activeLootTable[i3].minRarity && randomInt <= activeLootTable[i3].maxRarity) {
+          i4 = 0; //reset i4 variable
+
+          activeLoot = activeLootTable[i3]; // set activeLoot array to whatever array was selected
+          randomQty = getRandomIntBetween(activeLoot.minQty, activeLoot.maxQty)
+
+          //loop to check if there are chart references
+          while (i4 < 5) {
+            i5 = 0;
+            while (i5 < chartArray.length) {
+              if (activeLoot.name == chartArray[i5].name) {
+                activeLootTable2 = chartArray[i5].chart;
+                maxInt2 = getMaxInt(activeLootTable2);
+                randomInt2 = getRandomArbitrary(0, maxInt2)
+                i6 = 0;
+                while (i6 < activeLootTable2.length) {
+                  if (randomInt2 >= activeLootTable2[i6].minRarity && randomInt2 <= activeLootTable2[i6].maxRarity) {
+                    activeLoot = activeLootTable2[i6];
+                    randomQty2 = getRandomIntBetween(activeLoot.minQty, activeLoot.maxQty)
+                    randomQty = randomQty * randomQty2;
                   }
+                  i6++
                 }
-                i5++
               }
-              i4++
+              i5++
             }
-
-            i4 = 0; //reset i4 variable
-            //send loot info to screen
-            while (i4 < infoArray.length) {
-              if (infoArray[i4].loot == "") {
-                infoArray[i4].loot = activeLoot.name;
-                let randomInt2 = getRandomInt(activeLoot.moreQty)
-                infoArray[i4].Qty = randomInt2;
-                let relay = document.getElementById(infoArray[i4].name)
-                relay.innerHTML = activeLoot.name + " x" + (randomInt2)
-                break;
-              }
-              i4++
-            }
+            i4++
           }
-          i3++
         }
-        i2++
+        i3++
       }
+      infoArray[i2].loot = activeLoot.name;
+      infoArray[i2].Qty = randomQty;
+      let relay = document.getElementById(infoArray[i2].name)
+      relay.innerHTML = activeLoot.name + " x" + (infoArray[i2].Qty)
+      i2++
     }
-    i1++
   }
+  i1++
+}
 
   i = 0;
   while (i < 10) {
