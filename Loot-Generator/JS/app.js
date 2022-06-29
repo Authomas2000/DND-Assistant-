@@ -142,9 +142,9 @@ function randomizeLoot() {
         //if(activeLoot2.name !== ""){
         //  activeLoot2.name = lootName
         //}
-        console.log("checkRarity: " + checkRarity + " | " + "i2: " + i2);
-
         i2 = getNumberForRarity(checkRarity, i2)
+
+        console.log("checkRarity: " + checkRarity + " | " + "i2: " + i2);
 
         if (checkRarity == i2 + 1) {
           infoArray[i2].loot = lootName;

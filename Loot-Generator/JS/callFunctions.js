@@ -1,7 +1,7 @@
 //Function to reset reused variables
 function resetVariables() {
     i = 0;
-    while (i < infoArray.length){
+    while (i < infoArray.length) {
         infoArray[i].loot = "";
         infoArray[i].Qty = 0;
         totalArray[i].loot = "";
@@ -43,34 +43,37 @@ function getRandomInt(max) {
 //Random number generator
 function getMaxInt(array) {
     i = array.length;
-    let max = array[i-1].maxRarity;
+    let max = array[i - 1].maxRarity;
     return max;
 }
 
 //Random number generator
 function getNumberForRarity(rarity, i) {
-    if (rarity == 1) {
+    if (rarity == 0) {
         i = 0;
-      } else if (rarity == 2) {
+    }
+    else if (rarity == 1) {
+        i = 0;
+    } else if (rarity == 2) {
         i = 1;
-      } else if (rarity == 3) {
+    } else if (rarity == 3) {
         i = 2;
-      } else if (rarity == 4) {
+    } else if (rarity == 4) {
         i = 3;
-      } else if (rarity == 5) {
+    } else if (rarity == 5) {
         i = 4;
-      } else if (rarity == 6) {
+    } else if (rarity == 6) {
         i = 5;
-      } else if (rarity == 7) {
+    } else if (rarity == 7) {
         i = 6;
-      } else if (rarity == 8) {
+    } else if (rarity == 8) {
         i = 7;
-      } else if (rarity == 9) {
+    } else if (rarity == 9) {
         i = 8;
-      } else if (rarity == 10) {
+    } else if (rarity == 10) {
         i = 9;
-      }
-      return i;
+    }
+    return i;
 }
 
 

@@ -24,7 +24,7 @@ let goblinArray = [
 //Goblin Loot Chart (20) (incomplete) (ready to use)
 let orcArray = [
     //Common (%80 chance to draw one of these items) 
-    { name: "coins", minRarity: 1, maxRarity: 60, minQty: 1, maxQty: 3, rarity: 3},
+    { name: "coins", minRarity: 1, maxRarity: 60, minQty: 1, maxQty: 3, rarity: 1},
     { name: "Iron Greataxe", minRarity: 60, maxRarity: 70, minQty: 1, maxQty: 1, rarity: 1},
     { name: "Iron Javelin", minRarity: 70, maxRarity: 80, minQty: 1, maxQty: 2, rarity: 1},
 
