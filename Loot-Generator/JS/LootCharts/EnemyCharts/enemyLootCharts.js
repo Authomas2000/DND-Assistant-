@@ -24,22 +24,22 @@ let goblinArray = [
 //Goblin Loot Chart (20) (incomplete) (ready to use)
 let orcArray = [
     //Common (%80 chance to draw one of these items) 
-    { name: "coins", minRarity: 1, maxRarity: 60, minQty: 1, maxQty: 3,},
-    { name: "Iron Greataxe", minRarity: 60, maxRarity: 70, minQty: 1, maxQty: 1,},
-    { name: "Iron Javelin", minRarity: 70, maxRarity: 80, minQty: 1, maxQty: 2,},
+    { name: "coins", minRarity: 1, maxRarity: 60, minQty: 1, maxQty: 3, rarity: 3},
+    { name: "Iron Greataxe", minRarity: 60, maxRarity: 70, minQty: 1, maxQty: 1, rarity: 1},
+    { name: "Iron Javelin", minRarity: 70, maxRarity: 80, minQty: 1, maxQty: 2, rarity: 1},
 
     //Uncommon (%15 chance to draw one of these items) 
-    { name: "Bronze Greataxe", minRarity: 80, maxRarity: 82.5, minQty: 1, maxQty: 1,},
-    { name: "Bronze Javelin", minRarity: 82.5, maxRarity: 85, minQty: 1, maxQty: 1,},
-    { name: "Tin Greataxe", minRarity: 85, maxRarity: 87.5, minQty: 1, maxQty: 1,},
-    { name: "Tin Javelin", minRarity: 87.5, maxRarity: 90, minQty: 1, maxQty: 1,},
-    { name: "Copper Greataxe", minRarity: 90, maxRarity: 92.5, minQty: 1, maxQty: 1,},
-    { name: "Copper Javelin", minRarity: 92.5, maxRarity: 95, minQty: 1, maxQty: 1,},
+    { name: "Bronze Greataxe", minRarity: 80, maxRarity: 82.5, minQty: 1, maxQty: 1, rarity: 2},
+    { name: "Bronze Javelin", minRarity: 82.5, maxRarity: 85, minQty: 1, maxQty: 1, rarity: 2},
+    { name: "Tin Greataxe", minRarity: 85, maxRarity: 87.5, minQty: 1, maxQty: 1, rarity: 2},
+    { name: "Tin Javelin", minRarity: 87.5, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 2},
+    { name: "Copper Greataxe", minRarity: 90, maxRarity: 92.5, minQty: 1, maxQty: 1, rarity: 2},
+    { name: "Copper Javelin", minRarity: 92.5, maxRarity: 95, minQty: 1, maxQty: 1, rarity: 2},
 
     //Rare (%5 chance to draw one of these items) 
-    { name: "Silver Greataxe", minRarity: 95, maxRarity: 96.25, minQty: 1, maxQty: 1,},
-    { name: "Silver Javelin", minRarity: 96.25, maxRarity: 97.5, minQty: 1, maxQty: 1,},
-    { name: "potions", minRarity: 97.5, maxRarity: 100, minQty: 1, maxQty: 1,},
+    { name: "Silver Greataxe", minRarity: 95, maxRarity: 96.25, minQty: 1, maxQty: 1, rarity: 3},
+    { name: "Silver Javelin", minRarity: 96.25, maxRarity: 97.5, minQty: 1, maxQty: 1, rarity: 3},
+    { name: "potions", minRarity: 97.5, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3},
 ]
 
 //Goblin Loot Chart (20) (complete) (ready to use)

@@ -6,6 +6,10 @@ let biome = "";
 let creature_dropdown = document.getElementById("creature-dropdown");
 let creature = "";
 
+//rarity variables
+let rarity_dropdown = document.getElementById("rarity-dropdown");
+let rarity = 0;
+
 //creature variables
 let amount_dropdown = document.getElementById("amount-dropdown");
 let amount = 0;
@@ -13,6 +17,7 @@ let amount = 0;
 //other variables
 let total = document.getElementById("total");
 let activeLoot = {};
+let activeLoot2 = {};
 let activeLootTable = [];
 let activeLootTable2 = [];
 let code = "";
@@ -23,6 +28,10 @@ let randomInt2 = 0;
 let randomInt3 = 0;
 let randomQty = 0;
 let randomQty2 = 0;
+let checkRarity = 0;
+let checkRarity2 = 0;
+let lootName = "";
+let lootName2 = "";
 let i = 0;
 let i1 = 0;
 let i2 = 0;

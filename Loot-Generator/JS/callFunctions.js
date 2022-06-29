@@ -10,7 +10,12 @@ function resetVariables() {
         relay.innerHTML = infoArray[i].loot;
         i++
     }
+    activeLoot2 = {};
     total.innerHTML = "";
+    checkRarity = 0;
+    checkRarity2 = 0;
+    lootName = "";
+    lootName2 = "";
     i = 0;
     i1 = 0;
     i2 = 0;
@@ -40,6 +45,32 @@ function getMaxInt(array) {
     i = array.length;
     let max = array[i-1].maxRarity;
     return max;
+}
+
+//Random number generator
+function getNumberForRarity(rarity, i) {
+    if (rarity == 1) {
+        i = 0;
+      } else if (rarity == 2) {
+        i = 1;
+      } else if (rarity == 3) {
+        i = 2;
+      } else if (rarity == 4) {
+        i = 3;
+      } else if (rarity == 5) {
+        i = 4;
+      } else if (rarity == 6) {
+        i = 5;
+      } else if (rarity == 7) {
+        i = 6;
+      } else if (rarity == 8) {
+        i = 7;
+      } else if (rarity == 9) {
+        i = 8;
+      } else if (rarity == 10) {
+        i = 9;
+      }
+      return i;
 }
 
 
