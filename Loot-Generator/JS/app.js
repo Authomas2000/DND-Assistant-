@@ -22,14 +22,35 @@ amount_dropdown.addEventListener("amount", setAmount);
 
 //Function to setup biome variables based off of dropdown menu (var = biome)
 function setBiome(event) {
-  biome_dropdown.innerHTML = "Biome [" + event.target.id + "]";
-  biome = event.target.id;
+  if(event.target.id == "none"){
+    biome_dropdown.innerHTML = "Biome []";
+    biome = "";
+  }else{
+    biome_dropdown.innerHTML = "Biome [" + event.target.id + "]";
+    biome = event.target.id;
+  } 
 }
 
 //Function to setup creature variables based off of dropdown menu (var = creature)
 function setCreature(event) {
-  creature_dropdown.innerHTML = "Creature [" + event.target.id + "]";
-  creature = event.target.id;
+  if(event.target.id == "none"){
+    creature_dropdown.innerHTML = "Creature []";
+    creature = "";
+  }else{
+    creature_dropdown.innerHTML = "Creature [" + event.target.id + "]";
+    creature = event.target.id;
+  }
+}
+
+//Function to setup container variables based off of dropdown menu (var = creature)
+function setContainer(event) {
+  if(event.target.id == "none"){
+    container_dropdown.innerHTML = "Container []";
+    container = "";
+  }else{
+    container_dropdown.innerHTML = "Container [" + event.target.id + "]";
+    container = event.target.id;
+  }
 }
 
 //Function to setup amount of loot variables based off of dropdown menu (var = amount)
@@ -67,7 +88,7 @@ function checkForCodeInput() {
     if (biome == "" || biome == "none") {
       code = creature;
     } else {
-      code = biome + " " + creature;
+      code = biome + " " + creature + container;
     }
   }
 }

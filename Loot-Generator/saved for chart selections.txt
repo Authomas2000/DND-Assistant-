@@ -1,8 +1,6 @@
 { name: "forest goblin", lootDesc: "Corpse ", title: "Goblin Findings:", chart: forestGoblinArray },
 { name: "forest orc", lootDesc: "Corpse ", title: "Orc Loot Findings:", chart: forestOrcArray },
-{ name: "cultist", lootDesc: "Corpse ", title: "Cultist Findings:", chart: cultistArray },
 { name: "forest cultist", lootDesc: "Corpse ", title: "Cultist Findings:", chart: forestCultistArray },
-{ name: "skeleton", lootDesc: "Corpse ", title: "skeleton Findings:", chart: skeletonArray },
 { name: "forest skeleton", lootDesc: "Corpse ", title: "skeleton Findings:", chart: forestSkeletonArray },
 
 //Magic Item Charts

@@ -6,11 +6,15 @@ let biome = "";
 let creature_dropdown = document.getElementById("creature-dropdown");
 let creature = "";
 
+//creature variables
+let container_dropdown = document.getElementById("container-dropdown");
+let container = "";
+
 //rarity variables
 let rarity_dropdown = document.getElementById("rarity-dropdown");
 let rarity = 0;
 
-//creature variables
+//amount variables
 let amount_dropdown = document.getElementById("amount-dropdown");
 let amount = 0;
 
