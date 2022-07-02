@@ -35,10 +35,93 @@ let gemArray = [
 
 //Array for coins (41.1) (complete) (ready to use)
 let coinArray = [
-    //common (%55 chance to draw one of
+    //common (%55 chance to draw one of these)
     { name: "Silver Piece", minRarity: 1, maxRarity: 55, minQty: 1, maxQty: 15, rarity: 1 },
-    //uncommon (%40 chance to draw one of
+    //uncommon (%40 chance to draw one of these)
     { name: "Gold Piece", minRarity: 55, maxRarity: 95, minQty: 1, maxQty: 3, rarity: 2 },
-    //rare (%5 chance to draw one of
+    //rare (%5 chance to draw one of these)
     { name: "Platinum Piece", minRarity: 95, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+]
+
+//Array for bars (41.1) (complete) (ready to use)
+let barArray = [
+    //common (%55 chance to draw one of these)
+    { name: "Iron 1Ib Bar", minRarity: 1, maxRarity: 25, minQty: 1, maxQty: 3, rarity: 1 },
+    { name: "Copper 1Ib Bar", minRarity: 25, maxRarity: 40, minQty: 1, maxQty: 2, rarity: 1 },
+    { name: "Tin 1Ib Bar", minRarity: 40, maxRarity: 55, minQty: 1, maxQty: 2, rarity: 1 },
+    //uncommon (%40 chance to draw one of these)
+    { name: "Bronze 1Ib Bar", minRarity: 55, maxRarity: 65, minQty: 1, maxQty: 2, rarity: 2 },
+    { name: "Silver 1Ib Bar", minRarity: 65, maxRarity: 75, minQty: 1, maxQty: 1, rarity: 2 },
+    { name: "Gold 1Ib Bar", minRarity: 75, maxRarity: 85, minQty: 1, maxQty: 1, rarity: 2 },
+    { name: "Mithril 1Ib Bar", minRarity: 85, maxRarity: 95, minQty: 1, maxQty: 1, rarity: 3 },
+    //rare (%5 chance to draw one of these)
+    { name: "Platinum 1Ib Bar", minRarity: 95, maxRarity: 97.5, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Admontite 1Ib Bar", minRarity: 97.5, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+]
+
+//Array for bars (41.1) (complete) (ready to use)
+let oreArray = [
+    //common (%55 chance to draw one of these)
+    { name: "Iron Ore", minRarity: 1, maxRarity: 25, minQty: 1, maxQty: 3, rarity: 1 },
+    { name: "Copper Ore", minRarity: 25, maxRarity: 40, minQty: 1, maxQty: 2, rarity: 1 },
+    { name: "Tin Ore", minRarity: 40, maxRarity: 55, minQty: 1, maxQty: 2, rarity: 1 },
+    //uncommon (%40 chance to draw one of these)
+    { name: "Bronze Ore", minRarity: 55, maxRarity: 65, minQty: 1, maxQty: 2, rarity: 2 },
+    { name: "Silver Ore", minRarity: 65, maxRarity: 75, minQty: 1, maxQty: 1, rarity: 2 },
+    { name: "Gold Ore", minRarity: 75, maxRarity: 85, minQty: 1, maxQty: 1, rarity: 2 },
+    { name: "Mithril Ore", minRarity: 85, maxRarity: 95, minQty: 1, maxQty: 1, rarity: 3 },
+    //rare (%5 chance to draw one of these)
+    { name: "Platinum Ore", minRarity: 95, maxRarity: 97.5, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Admontite Ore", minRarity: 97.5, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+]
+
+//Array for stone (41.1) (complete) (ready to use)
+let stoneArray = [
+    //common (%50 chance to draw one of these)
+    { name: "Stone", minRarity: 1, maxRarity: 25, minQty: 1, maxQty: 3, rarity: 1 },
+    { name: "Whetstone", minRarity: 25, maxRarity: 50, minQty: 1, maxQty: 2, rarity: 1 },
+    //uncommon (%30 chance to draw one of these)
+    { name: "Marble", minRarity: 50, maxRarity: 65, minQty: 1, maxQty: 2, rarity: 2 },
+    { name: "Limestone", minRarity: 65, maxRarity: 80, minQty: 1, maxQty: 2, rarity: 2 },
+    //rare (%20 chance to draw one of these)
+    { name: "Laterite", minRarity: 80, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Quartz", minRarity: 90, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+]
+
+//Array for leather (41.1) (complete) (ready to use)
+let leatherArray = [
+    //common (%70 chance to draw one of these)
+    { name: "Bonded Leather", minRarity: 1, maxRarity: 70, minQty: 1, maxQty: 3, rarity: 1 },
+    //uncommon (%20 chance to draw one of these)
+    { name: "Top Grain Leather", minRarity: 70, maxRarity: 90, minQty: 1, maxQty: 2, rarity: 2 },
+    //rare (%10 chance to draw one of these)
+    { name: "Full Grain Leather", minRarity: 90, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+]
+
+//Array for stone (41.1) (complete) (ready to use)
+let plankArray = [
+    //common (%70 chance to draw one of these)
+    { name: "Oak Plank", minRarity: 1, maxRarity: 35, minQty: 1, maxQty: 3, rarity: 1 },
+    { name: "Birch Plank", minRarity: 35, maxRarity: 70, minQty: 1, maxQty: 2, rarity: 1 },
+    //uncommon (%20 chance to draw one of these)
+    { name: "Hickory Plank", minRarity: 70, maxRarity: 80, minQty: 1, maxQty: 1, rarity: 2 },
+    { name: "Ash Plank", minRarity: 80, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 2 },
+    //rare (%7 chance to draw one of these)
+    { name: "Red Hickory Plank", minRarity: 90, maxRarity: 97, minQty: 1, maxQty: 1, rarity: 3 },
+    //very rare (%3 chance to draw one of these)
+    { name: "Blight Shim", minRarity: 97, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+]
+
+//Array for stone (41.1) (complete) (ready to use)
+let logArray = [
+    //common (%70 chance to draw one of these)
+    { name: "Oak Log", minRarity: 1, maxRarity: 35, minQty: 1, maxQty: 3, rarity: 1 },
+    { name: "Birch Log", minRarity: 35, maxRarity: 70, minQty: 1, maxQty: 2, rarity: 1 },
+    //uncommon (%24 chance to draw one of these)
+    { name: "Hickory Log", minRarity: 70, maxRarity: 82, minQty: 1, maxQty: 1, rarity: 2 },
+    { name: "Ash Log", minRarity: 82, maxRarity: 94, minQty: 1, maxQty: 1, rarity: 2 },
+    //rare (%5.5 chance to draw one of these)
+    { name: "Red Hickory Log", minRarity: 94, maxRarity: 99.5, minQty: 1, maxQty: 1, rarity: 3 },
+    //very rare (%0.5 chance to draw one of these)
+    { name: "Blight Wood", minRarity: 99.5, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]

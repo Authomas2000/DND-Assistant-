@@ -70,3 +70,13 @@ let magicalGemsRecipesArray = [
     { name: "Quickness Gem (LVL2) Recipe", minRarity: 80, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 3 },
     { name: "Reenchant Gem (LVL2) Recipe", minRarity: 90, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]
+
+//Magical handle recipes chart (100) (incomplete) (ready to use)
+let magicalHandleRecipesArray = [
+    //Rare (%60 chance to draw one of these items)
+    { name: "Blight Handle Recipe", minRarity: 1, maxRarity: 60, minQty: 1, maxQty: 1, rarity: 3 },
+    //Rare (%30 chance to draw one of these items)
+    { name: "Soul Handle Recipe", minRarity: 60, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 3 },
+    //Rare (%10 chance to draw one of these items)
+    { name: "Dragon Soul Handle Recipe", minRarity: 90, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+]

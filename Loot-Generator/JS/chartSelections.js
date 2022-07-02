@@ -19,12 +19,12 @@ let chartArray = [
     //Material Charts
     { name: "coins", lootDesc: "coin ", title: "Coin Findings:", chart: coinArray },
     { name: "gems", lootDesc: "coin ", title: "Gem Findings:", chart: gemArray },
-    //{ name: "bars", lootDesc: "Bar ", title: "Metal Ore Findings:", chart: barArray },
-    //{ name: "ores", lootDesc: "Ore ", title: "Metal Bar Findings:", chart: oreArray },
-    //{ name: "stone", lootDesc: "Stone ", title: "Stone Findings:", chart: stoneArray },
-    //{ name: "leather", lootDesc: "Leather ", title: "Leather Findings:", chart: leatherArray },
-    //{ name: "planks", lootDesc: "Plank ", title: "Plank Findings:", chart: plankArray },
-    //{ name: "logs", lootDesc: "Log ", title: "Long Findings:", chart: logArray },
+    { name: "bars", lootDesc: "Bar ", title: "Metal Ore Findings:", chart: barArray },
+    { name: "ores", lootDesc: "Ore ", title: "Metal Bar Findings:", chart: oreArray },
+    { name: "stone", lootDesc: "Stone ", title: "Stone Findings:", chart: stoneArray },
+    { name: "leather", lootDesc: "Leather ", title: "Leather Findings:", chart: leatherArray },
+    { name: "planks", lootDesc: "Plank ", title: "Plank Findings:", chart: plankArray },
+    { name: "logs", lootDesc: "Log ", title: "Long Findings:", chart: logArray },
     //{ name: "meat", lootDesc: "Meat ", title: "Meat Findings:", chart: meatArray },
     //{ name: "cave meat", lootDesc: "Meat ", title: "Meat Findings:", chart: caveMeatArray },
     //{ name: "forest pelts", lootDesc: "Pelt ", title: "Pelt Findings:", chart: forestPeltsArray },
@@ -59,16 +59,13 @@ let chartArray = [
     { name: "magical lure recipes", lootDesc: "Recipe ", title: "Recipe Findings:", chart: magicalLureRecipesArray },
     { name: "magical sentry recipes", lootDesc: "Recipe ", title: "Recipe Findings:", chart: magicalSentryRecipesArray },
     { name: "magical gem recipes", lootDesc: "Recipe ", title: "Recipe Findings:", chart: magicalGemsRecipesArray },
-    //{ name: "magical handle recipes", lootDesc: "Recipe ", title: "Recipe Findings:", chart: magicalHandleRecipesArray },
+    { name: "magical handle recipes", lootDesc: "Recipe ", title: "Recipe Findings:", chart: magicalHandleRecipesArray },
     { name: "soul magic recipes", lootDesc: "Recipe ", title: "Recipe Findings:", chart: soulMagicRecipesArray },
     { name: "lost magic recipes", lootDesc: "Recipe ", title: "Recipe Findings:", chart: lostMagicRecipesArray },
     //{ name: "weapon enchantment recipes", lootDesc: "recipe ", title: "recipe Findings:", chart: weaponEnchantmentRecipesArray },
     //{ name: "armor enchantment recipes", lootDesc: "recipe ", title: "recipe Findings:", chart: armorEnchantmentRecipesArray },
 
-    //Other Charts
-    { name: "small weapons", lootDesc: "recipe ", title: "recipe Findings:", chart: smallWeaponsArray },
-    { name: "medium weapons", lootDesc: "recipe ", title: "recipe Findings:", chart: mediumWeaponsArray },
-    { name: "big weapons", lootDesc: "recipe ", title: "recipe Findings:", chart: bigWeaponsArray },
+    //Storage Charts
     //{ name: "book", lootDesc: "Book ", title: "Book Loot Findings:", chart: bookArray },
     //{ name: "sorcerers pouch", lootDesc: "Pouch ", title: "Pouch Loot Findings:", chart: sorcererPouchArray },
     //{ name: "pouch", lootDesc: "Pouch ", title: "Pouch Loot Findings:", chart: pouchArray },
@@ -84,4 +81,15 @@ let chartArray = [
     //{ name: "cave barrel", lootDesc: "Barrel ", title: "Cave barrel Loot Findings:", chart: caveBarrelArray },
     //{ name: "cave big barrel", lootDesc: "Barrel ", title: "Cave Big barrel Loot Findings:", chart: caveBigBarrelArray },
     //{ name: "grassland barrel", lootDesc: "Barrel ", title: "Cave barrel Loot Findings:", chart: grasslandBarrelArray },
+
+    //Weapon Charts
+    { name: "weapons", lootDesc: "recipe ", title: "recipe Findings:", chart: smallWeaponsArray },
+    { name: "small weapons", lootDesc: "recipe ", title: "recipe Findings:", chart: smallWeaponsArray },
+    { name: "medium weapons", lootDesc: "recipe ", title: "recipe Findings:", chart: mediumWeaponsArray },
+    { name: "big weapons", lootDesc: "recipe ", title: "recipe Findings:", chart: bigWeaponsArray },
+
+    //Other Charts
+    //{ name: "liquids", lootDesc: "Liquid ", title: "Liquid Findings:", chart: liquidsArray },
+    //{ name: "common liquids", lootDesc: "Liquid ", title: "Liquid Findings:", chart: commonLiquidsArray },
+    //{ name: "drinks", lootDesc: "Liquid ", title: "Liquid Findings:", chart: liquidsArray },
 ]

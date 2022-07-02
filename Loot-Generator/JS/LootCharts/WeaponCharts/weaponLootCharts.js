@@ -1,4 +1,12 @@
 //Array for small weapons (measured by 100) (complete)
+let weaponsArray = [
+    //weapons (%100 chance to draw one of these items) 
+    { name: "small weapons", minRarity: 1, maxRarity: 33.3, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "medium weapons", minRarity: 33.3, maxRarity: 66.6, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "big weapons", minRarity: 66.6, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+]
+
+//Array for small weapons (measured by 100) (complete)
 let smallWeaponsArray = [
     // Level 1 weapons (%94 chance to draw one of these items) 
     { name: "Oak Hand Crossbow", minRarity: 1, maxRarity: 25, minQty: 1, maxQty: 1, rarity: 1 },
