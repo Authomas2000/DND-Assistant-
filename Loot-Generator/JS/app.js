@@ -18,6 +18,8 @@ document.addEventListener("click", e => {
 //Dropdown variable setup
 biome_dropdown.addEventListener("biome", setBiome);
 creature_dropdown.addEventListener("creature", setCreature);
+container_dropdown.addEventListener("container", setContainer);
+other_dropdown.addEventListener("other", setOther);
 amount_dropdown.addEventListener("amount", setAmount);
 
 //Function to setup biome variables based off of dropdown menu (var = biome)
@@ -50,6 +52,17 @@ function setContainer(event) {
   }else{
     container_dropdown.innerHTML = "Container [" + event.target.id + "]";
     container = event.target.id;
+  }
+}
+
+//Function to setup container variables based off of dropdown menu (var = creature)
+function setOther(event) {
+  if(event.target.id == "none"){
+    other_dropdown.innerHTML = "Other []";
+    other = "";
+  }else{
+    other_dropdown.innerHTML = "Other [" + event.target.id + "]";
+    other = event.target.id;
   }
 }
 
@@ -86,9 +99,9 @@ function start() {
 function checkForCodeInput() {
   if (code == "") {
     if (biome == "" || biome == "none") {
-      code = creature;
+      code = creature + container + other;
     } else {
-      code = biome + " " + creature + container;
+      code = biome + " " + creature + container + other;
     }
   }
 }

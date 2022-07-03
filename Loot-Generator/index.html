@@ -26,6 +26,8 @@
                         <div class="options" onclick="setBiome(event)" id="none">None</div>
                         <div class="options" onclick="setBiome(event)" id="forest">Forest</div>
                         <div class="options" onclick="setBiome(event)" id="grassland">Grassland</div>
+                        <div class="options" onclick="setBiome(event)" id="mountain">Mountain</div>
+                        <div class="options" onclick="setBiome(event)" id="underground">Underground</div>
                     </div>
                 </div>
             </div>
@@ -55,6 +57,24 @@
                     <div class="dropdown-options">
                         <div class="options" onclick="setContainer(event)" id="none">None</div>
                         <div class="options" onclick="setContainer(event)" id="chest">Chest</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Other Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="other-dropdown">Other []</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setOther(event)" id="none">None</div>
+                        <div class="options" onclick="setOther(event)" id="coins">Coins</div>
+                        <div class="options" onclick="setOther(event)" id="gems">Gems</div>
+                        <div class="options" onclick="setOther(event)" id="bars">Bars</div>
+                        <div class="options" onclick="setOther(event)" id="ores">Ores</div>
+                        <div class="options" onclick="setOther(event)" id="pelts">Pelts</div>
+                        <div class="options" onclick="setOther(event)" id="creature parts">Creature Parts</div>
                     </div>
                 </div>
             </div>
@@ -137,7 +157,8 @@
 <script src="js/LootCharts/MaterialCharts/materialLootCharts.js"></script>
 <script src="js/LootCharts/MaterialCharts/forestMaterialLootCharts.js"></script>
 <script src="js/LootCharts/MaterialCharts/grasslandMaterialLootCharts.js"></script>
-<script src="js/LootCharts/MaterialCharts/caveMaterialLootCharts.js"></script>
+<script src="js/LootCharts/MaterialCharts/mountainMaterialLootCharts.js"></script>
+<script src="js/LootCharts/MaterialCharts/undergroundMaterialLootCharts.js"></script>
 
 <!--Plantlife Charts-->
 <script src="js/LootCharts/MaterialCharts/plantLifeLootCharts.js"></script>
@@ -150,7 +171,8 @@
 <script src="js/LootCharts/StorageCharts/storageLootCharts.js"></script>
 <script src="js/LootCharts/StorageCharts/forestStorageLootCharts.js"></script>
 <script src="js/LootCharts/StorageCharts/grasslandStorageLootCharts.js"></script>
-<script src="js/LootCharts/StorageCharts/caveStorageLootCharts.js"></script>
+<script src="js/LootCharts/StorageCharts/mountainStorageLootCharts.js"></script>
+<script src="js/LootCharts/StorageCharts/undergroundStorageLootCharts.js"></script>
 
 <!--Weapon Charts-->
 <script src="js/LootCharts/WeaponCharts/weaponLootCharts.js"></script>

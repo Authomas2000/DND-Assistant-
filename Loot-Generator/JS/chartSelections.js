@@ -26,12 +26,14 @@ let chartArray = [
     { name: "planks", lootDesc: "Plank ", title: "Plank Findings:", chart: plankArray },
     { name: "logs", lootDesc: "Log ", title: "Long Findings:", chart: logArray },
     //{ name: "meat", lootDesc: "Meat ", title: "Meat Findings:", chart: meatArray },
-    //{ name: "cave meat", lootDesc: "Meat ", title: "Meat Findings:", chart: caveMeatArray },
-    //{ name: "forest pelts", lootDesc: "Pelt ", title: "Pelt Findings:", chart: forestPeltsArray },
-    //{ name: "forest claws", lootDesc: "Claw ", title: "Claw Findings:", chart: forestClawsArray },
-    //{ name: "grassland pelts", lootDesc: "Pelt ", title: "Pelt Findings:", chart: grasslandPeltsArray },
-    //{ name: "grassland claws", lootDesc: "Claw ", title: "Claw Findings:", chart: grasslandClawsArray },
-    //{ name: "cave creature drops", lootDesc: "Item ", title: "Item Findings:", chart: caveCreatureDropArray },
+    //{ name: "underground meat", lootDesc: "Meat ", title: "Meat Findings:", chart: undergroundMeatArray },
+    { name: "forest pelts", lootDesc: "Pelt ", title: "Pelt Findings:", chart: forestPeltsArray },
+    { name: "forest creature parts", lootDesc: "Claw ", title: "Claw Findings:", chart: forestCreaturePartsArray },
+    { name: "grassland pelts", lootDesc: "Pelt ", title: "Pelt Findings:", chart: grasslandPeltsArray },
+    { name: "grassland creature parts", lootDesc: "Claw ", title: "Claw Findings:", chart: grasslandCreaturePartsArray },
+    { name: "mountain pelts", lootDesc: "Pelt ", title: "Pelt Findings:", chart: mountainPeltsArray },
+    { name: "mountain creature parts", lootDesc: "Claw ", title: "Claw Findings:", chart: mountainCreaturePartsArray },
+    { name: "underground creature parts", lootDesc: "Item ", title: "Item Findings:", chart: undergroundCreaturePartsArray },
 
     //Magic Item Charts
     //{ name: "magical items", lootDesc: "Item ", title: "Item Findings:", chart: magicalItemsArray },
@@ -47,6 +49,8 @@ let chartArray = [
     //{ name: "plants", lootDesc: "Plant ", title: "Plant Findings:", chart: plantArray },
     //{ name: "forest plants", lootDesc: "Plant ", title: "Plant Findings:", chart: forestPlantArray },
     //{ name: "grassland plants", lootDesc: "Plant ", title: "Plant Findings:", chart: grasslandPlantArray },
+    //{ name: "mountain plants", lootDesc: "Plant ", title: "Plant Findings:", chart: grasslandPlantArray },
+    //{ name: "underground plants", lootDesc: "Plant ", title: "Plant Findings:", chart: undergroundPlantArray },
 
     //Recipe Charts
     { name: "weapon recipes", lootDesc: "Recipe ", title: "Recipe Findings:", chart: weaponRecipesArray },
@@ -78,8 +82,8 @@ let chartArray = [
     //{ name: "big barrel", lootDesc: "Barrel ", title: "barrel Loot Findings:", chart: bigBarrelArray },
     //{ name: "forest barrel", lootDesc: "Barrel ", title: "Forest barrel Loot Findings:", chart: forestBarrelArray },
     //{ name: "forest big barrel", lootDesc: "Barrel ", title: "Forest Big barrel Loot Findings:", chart: forestBigBarrelArray },
-    //{ name: "cave barrel", lootDesc: "Barrel ", title: "Cave barrel Loot Findings:", chart: caveBarrelArray },
-    //{ name: "cave big barrel", lootDesc: "Barrel ", title: "Cave Big barrel Loot Findings:", chart: caveBigBarrelArray },
+    //{ name: "underground barrel", lootDesc: "Barrel ", title: "Cave barrel Loot Findings:", chart: undergroundBarrelArray },
+    //{ name: "underground big barrel", lootDesc: "Barrel ", title: "Cave Big barrel Loot Findings:", chart: undergroundBigBarrelArray },
     //{ name: "grassland barrel", lootDesc: "Barrel ", title: "Cave barrel Loot Findings:", chart: grasslandBarrelArray },
 
     //Weapon Charts
