@@ -47,10 +47,10 @@ let chartArray = [
 
     //Plant Life Charts
     //{ name: "plants", lootDesc: "Plant ", title: "Plant Findings:", chart: plantArray },
-    //{ name: "forest plants", lootDesc: "Plant ", title: "Plant Findings:", chart: forestPlantArray },
-    //{ name: "grassland plants", lootDesc: "Plant ", title: "Plant Findings:", chart: grasslandPlantArray },
-    //{ name: "mountain plants", lootDesc: "Plant ", title: "Plant Findings:", chart: grasslandPlantArray },
-    //{ name: "underground plants", lootDesc: "Plant ", title: "Plant Findings:", chart: undergroundPlantArray },
+    { name: "forest plants", lootDesc: "Plant ", title: "Plant Findings:", chart: forestPlantsArray },
+    { name: "grassland plants", lootDesc: "Plant ", title: "Plant Findings:", chart: grasslandPlantsArray },
+    { name: "mountain plants", lootDesc: "Plant ", title: "Plant Findings:", chart: mountainPlantsArray },
+    { name: "underground plants", lootDesc: "Plant ", title: "Plant Findings:", chart: undergroundPlantsArray },
 
     //Recipe Charts
     { name: "weapon recipes", lootDesc: "Recipe ", title: "Recipe Findings:", chart: weaponRecipesArray },
@@ -96,4 +96,5 @@ let chartArray = [
     //{ name: "liquids", lootDesc: "Liquid ", title: "Liquid Findings:", chart: liquidsArray },
     //{ name: "common liquids", lootDesc: "Liquid ", title: "Liquid Findings:", chart: commonLiquidsArray },
     //{ name: "drinks", lootDesc: "Liquid ", title: "Liquid Findings:", chart: liquidsArray },
+    { name: "potions", lootDesc: "Liquid ", title: "Liquid Findings:", chart: potionsArray },
 ]

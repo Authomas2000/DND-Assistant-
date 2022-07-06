@@ -4,7 +4,7 @@ let zombieArray = [
     { name: "coins", minRarity: 0, maxRarity: 70, minQty: 1, maxQty: 2, rarity: 3 },
 
     //Uncommon (%25 chance to draw one of these items) 
-    { name: "", minRarity: 70, maxRarity: 95, minQty: 1, maxQty: 1, rarity: 1 },
+    { name: "Iron Dagger", minRarity: 70, maxRarity: 95, minQty: 1, maxQty: 1, rarity: 1 },
 
     //Rare (%5 chance to draw one of these items) 
     { name: "recipes", minRarity: 95, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },

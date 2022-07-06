@@ -83,7 +83,9 @@ function start() {
   resetVariables()
 
   //set code to equal code input
-  code = document.getElementById("code").value;
+  code = document.getElementById("code");
+  code = code.value;
+  console.log(code);
 
   //call function to see if code input is empty and if so, to use dropdown variables
   checkForCodeInput()
@@ -173,9 +175,7 @@ function randomizeLoot() {
           }
           i3++
         }
-        //if(activeLoot2.name !== ""){
-        //  activeLoot2.name = lootName
-        //}
+        
         i2 = getNumberForRarity(checkRarity, i2)
 
         console.log("checkRarity: " + checkRarity + " | " + "i2: " + i2);
@@ -192,17 +192,6 @@ function randomizeLoot() {
     }
     i1++
   }
-
-  //i = 0;
-  //while(i < amount){
-  //  infoArray[i].loot = lootName;
-  //  infoArray[i].Qty = randomQty;
-  //  let relay = document.getElementById(infoArray[i].name)
-  //  relay.innerHTML = lootName + " x" + (infoArray[i].Qty)
-  //  console.log(infoArray[i].loot);
-  //  checkRarity2++;
-  //  console.log(checkRarity2);
-  //}
 }
 
 //function to get total and display it
