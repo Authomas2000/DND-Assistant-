@@ -36,6 +36,10 @@ function fontToNormal(object) {
     return object
 }
 
+function displayInfoTitle() {
+    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
+}
+
 function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }

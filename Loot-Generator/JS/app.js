@@ -27,11 +27,11 @@ function setBiome(event) {
   if(event.target.id == "none"){
     biome = "";
     fontToNormal(biome_dropdown);
-    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
+    displayInfoTitle();
   }else{
     biome = event.target.id;
     fontToItalic(biome_dropdown);
-    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
+    displayInfoTitle();
   } 
 }
 
@@ -40,11 +40,11 @@ function setCreature(event) {
   if(event.target.id == "none"){
     creature = "";
     fontToNormal(creature_dropdown);
-    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
+    displayInfoTitle();
   }else{
     creature = event.target.id;
     fontToItalic(creature_dropdown);
-    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
+    displayInfoTitle();
   }
 }
 
@@ -53,11 +53,11 @@ function setContainer(event) {
   if(event.target.id == "none"){
     container = "";
     fontToNormal(container_dropdown);
-    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
+    displayInfoTitle();
   }else{
     container = event.target.id;
     fontToItalic(container_dropdown);
-    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
+    displayInfoTitle();
   }
 }
 
@@ -66,11 +66,11 @@ function setOther(event) {
   if(event.target.id == "none"){
     other = "";
     fontToNormal(other_dropdown);
-    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
+    displayInfoTitle();
   }else{
     other = event.target.id;
     fontToItalic(other_dropdown);
-    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
+    displayInfoTitle();
   }
 }
 
@@ -78,12 +78,22 @@ function setOther(event) {
 function setRarity(event) {
   rarity_dropdown.innerHTML = "Rarity [" + event.target.id + "]";
   rarity = Number(event.target.id);
+  if (rarity !== 1){
+    fontToItalic(rarity_dropdown);
+  }else{
+    fontToNormal(rarity_dropdown);
+  }
 }
 
 //Function to setup amount of loot variables based off of dropdown menu (var = amount)
 function setAmount(event) {
   amount_dropdown.innerHTML = "Amount [" + event.target.id + "]";
   amount = Number(event.target.id);
+  if (amount !== 1){
+    fontToItalic(amount_dropdown);
+  }else{
+    fontToNormal(amount_dropdown);
+  }
 }
 
 function start() {

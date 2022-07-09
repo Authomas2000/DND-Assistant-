@@ -16,11 +16,11 @@ let other = "";
 
 //rarity variables
 let rarity_dropdown = document.getElementById("rarity-dropdown");
-let rarity = 0;
+let rarity = 1;
 
 //amount variables
 let amount_dropdown = document.getElementById("amount-dropdown");
-let amount = 0;
+let amount = 1;
 
 //other variables
 let total = document.getElementById("total");
