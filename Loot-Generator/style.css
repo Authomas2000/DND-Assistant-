@@ -134,7 +134,7 @@ button {
     width: 1515px;
     height: 700px;
     position: absolute;
-    background-image: url("img/background.png");
+    background-image: url("../img/background.png");
     background-size: cover;
     z-index: -2;
 }

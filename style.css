@@ -1,0 +1,69 @@
+body {
+    border-style: solid;
+    color: black;
+    width: 1515px;
+    height: 700px;
+    z-index: +1;
+}
+
+.white{
+    color: white;
+}
+
+.margin{
+    color: white;
+    margin-left: 50px;
+}
+
+.link{
+    font-size: 35px;
+    color: white;
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-family: normal;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: red;
+}
+
+#links-menu{
+    margin-left: 390px;
+    display: flex;
+    padding: .5rem;
+    gap: 2rem;
+}
+
+#welcomeTitle{
+    font-size: 45px;
+    text-align: center;
+    border-bottom: solid;
+}
+
+#infoTitle{
+    font-style: italic;
+    margin-top: 60px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#Background{
+    width: 1515px;
+    height: 700px;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    opacity: .3;
+}
+
+#background{ 
+    width: 1515px;
+    height: 700px;
+    position: absolute;
+    background-image: url("img/background.png");
+    background-size: cover;
+    z-index: -2;
+}
+
