@@ -1,7 +1,7 @@
 //Zombie Loot Chart (100) (incomplete) (ready to use)
 let zombieArray = [
     //Common (%70 chance to draw one of these items) 
-    { name: "coins", minRarity: 0, maxRarity: 70, minQty: 1, maxQty: 2, rarity: 3 },
+    { name: "pouch", minRarity: 0, maxRarity: 70, minQty: 1, maxQty: 1, rarity: 3 },
 
     //Uncommon (%25 chance to draw one of these items) 
     { name: "Iron Dagger", minRarity: 70, maxRarity: 95, minQty: 1, maxQty: 1, rarity: 1 },
@@ -13,7 +13,7 @@ let zombieArray = [
 //Goblin Loot Chart (100) (incomplete) (ready to use)
 let goblinArray = [
     //Common (%80 chance to draw one of these items) 
-    { name: "coins", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 2, rarity: 3 },
+    { name: "pouch", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 1, rarity: 3 },
     { name: "Iron Scimitar", minRarity: 60, maxRarity: 80, minQty: 1, maxQty: 1, rarity: 1 },
 
     //Uncommon (%15 chance to draw one of these items) 
@@ -29,7 +29,7 @@ let goblinArray = [
 //Orc Loot Chart (20) (complete) (ready to use)
 let orcArray = [
     //Common (%80 chance to draw one of these items) 
-    { name: "coins", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 3, rarity: 3 },
+    { name: "pouch", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 2, rarity: 3 },
     { name: "Iron Greataxe", minRarity: 60, maxRarity: 70, minQty: 1, maxQty: 1, rarity: 1 },
     { name: "Iron Javelin", minRarity: 70, maxRarity: 80, minQty: 1, maxQty: 2, rarity: 1 },
 
@@ -50,7 +50,7 @@ let orcArray = [
 //Cultist Loot Chart (20) (complete) (ready to use)
 let cultistArray = [
     //Common (%80 chance to draw one of these items) 
-    { name: "coins", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 2, rarity: 3 },
+    { name: "pouch", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 1, rarity: 3 },
     { name: "Silver Belt", minRarity: 60, maxRarity: 62.5, minQty: 1, maxQty: 1, rarity: 1 },
     { name: "Iron Scimitar", minRarity: 62.5, maxRarity: 72.5, minQty: 1, maxQty: 1, rarity: 1 },
     { name: "Iron Dagger", minRarity: 72.5, maxRarity: 80, minQty: 1, maxQty: 1, rarity: 1 },
@@ -72,7 +72,7 @@ let cultistArray = [
 //Skeleton Loot Chart (20) (incomplete) (ready to use)
 let skeletonArray = [
     //Common (%80 chance to draw one of these items) 
-    { name: "coins", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 2, rarity: 3 },
+    { name: "pouch", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 1, rarity: 3 },
     { name: "Iron Shortsword", minRarity: 60, maxRarity: 70, minQty: 1, maxQty: 1, rarity: 1 },
     { name: "Bone Meal", minRarity: 70, maxRarity: 80, minQty: 1, maxQty: 2, rarity: 1 },
 

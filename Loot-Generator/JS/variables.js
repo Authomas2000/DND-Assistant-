@@ -24,6 +24,7 @@ let amount = 0;
 
 //other variables
 let total = document.getElementById("total");
+let info = document.getElementById("Info");
 let activeLoot = {};
 let activeLoot2 = {};
 let activeLootTable = [];

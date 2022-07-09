@@ -1,3 +1,12 @@
+//Array for plants (41.1) (complete) (ready to use)
+let plantArray = [
+    //common (%70 chance to draw one of these)
+    { name: "forest plants", minRarity: 0, maxRarity: 20, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "grassland plants", minRarity: 20, maxRarity: 40, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "mountain plants", minRarity: 40, maxRarity: 60, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "underground plants", minRarity: 60, maxRarity: 80, minQty: 1, maxQty: 1, rarity: 3 },
+]
+
 //Array for forest plants (41.1) (complete) (ready to use)
 let forestPlantsArray = [
     //common (%70 chance to draw one of these)

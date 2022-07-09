@@ -25,44 +25,52 @@ amount_dropdown.addEventListener("amount", setAmount);
 //Function to setup biome variables based off of dropdown menu (var = biome)
 function setBiome(event) {
   if(event.target.id == "none"){
-    biome_dropdown.innerHTML = "Biome []";
     biome = "";
+    fontToNormal(biome_dropdown);
+    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
   }else{
-    biome_dropdown.innerHTML = "Biome [" + event.target.id + "]";
     biome = event.target.id;
+    fontToItalic(biome_dropdown);
+    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
   } 
 }
 
 //Function to setup creature variables based off of dropdown menu (var = creature)
 function setCreature(event) {
   if(event.target.id == "none"){
-    creature_dropdown.innerHTML = "Creature []";
     creature = "";
+    fontToNormal(creature_dropdown);
+    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
   }else{
-    creature_dropdown.innerHTML = "Creature [" + event.target.id + "]";
     creature = event.target.id;
+    fontToItalic(creature_dropdown);
+    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
   }
 }
 
 //Function to setup container variables based off of dropdown menu (var = creature)
 function setContainer(event) {
   if(event.target.id == "none"){
-    container_dropdown.innerHTML = "Container []";
     container = "";
+    fontToNormal(container_dropdown);
+    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
   }else{
-    container_dropdown.innerHTML = "Container [" + event.target.id + "]";
     container = event.target.id;
+    fontToItalic(container_dropdown);
+    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
   }
 }
 
 //Function to setup container variables based off of dropdown menu (var = creature)
 function setOther(event) {
   if(event.target.id == "none"){
-    other_dropdown.innerHTML = "Other []";
     other = "";
+    fontToNormal(other_dropdown);
+    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
   }else{
-    other_dropdown.innerHTML = "Other [" + event.target.id + "]";
     other = event.target.id;
+    fontToItalic(other_dropdown);
+    info.innerHTML = capitalize(biome) + " " + capitalize(creature) + capitalize(container) + capitalize(other);
   }
 }
 

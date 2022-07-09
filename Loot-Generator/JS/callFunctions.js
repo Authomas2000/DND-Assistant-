@@ -24,6 +24,22 @@ function resetVariables() {
     i5 = 0;
 }
 
+function fontToItalic(object) {
+    object.style.fontStyle = "italic";
+    object.style.fontWeight = "bold";
+    return object
+}
+
+function fontToNormal(object) {
+    object.style.fontStyle = "normal";
+    object.style.fontWeight = "normal";
+    return object
+}
+
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 //Random number between values
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;

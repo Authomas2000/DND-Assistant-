@@ -23,6 +23,6 @@ let sorcererPouchArray = [
 //Chest Loot Chart (measured by 10) (incomplete) (ready to use)
 let pouchArray = [
     //common (%50 chance to draw one of these items)
-    { name: "coins", minRarity: 1, maxRarity: 80, minQty: 1, maxQty: 1, rarity: 3 },
-    { name: "gems" }
+    { name: "coins", minRarity: 1, maxRarity: 95, minQty: 1, maxQty: 2, rarity: 3 },
+    { name: "gems", minRarity: 95, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]
