@@ -50,7 +50,7 @@ let orcArray = [
 //Cultist Loot Chart (20) (complete) (ready to use)
 let cultistArray = [
     //Common (%80 chance to draw one of these items) 
-    { name: "pouch", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "cultist pouch", minRarity: 0, maxRarity: 60, minQty: 1, maxQty: 1, rarity: 3 },
     { name: "Silver Belt", minRarity: 60, maxRarity: 62.5, minQty: 1, maxQty: 1, rarity: 1 },
     { name: "Iron Scimitar", minRarity: 62.5, maxRarity: 72.5, minQty: 1, maxQty: 1, rarity: 1 },
     { name: "Iron Dagger", minRarity: 72.5, maxRarity: 80, minQty: 1, maxQty: 1, rarity: 1 },

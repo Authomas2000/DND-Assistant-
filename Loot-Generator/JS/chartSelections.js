@@ -89,6 +89,7 @@ let chartArray = [
     //Storage Charts
     //{ name: "book", lootDesc: "Book ", title: "Book Loot Findings:", chart: bookArray },
     //{ name: "sorcerers pouch", lootDesc: "Pouch ", title: "Pouch Loot Findings:", chart: sorcererPouchArray },
+    { name: "cultist pouch", lootDesc: "Pouch ", title: "Pouch Loot Findings:", chart: cultistPouchArray },
     { name: "pouch", lootDesc: "Pouch ", title: "Pouch Loot Findings:", chart: pouchArray },
     //{ name: "chest", lootDesc: "Item ", title: "Chest Loot Findings:", chart: chestArray },
     //{ name: "big chest", lootDesc: "Item ", title: "Chest Loot Findings:", chart: bigChestArray },
