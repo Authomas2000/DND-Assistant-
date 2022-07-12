@@ -37,7 +37,7 @@ let chartArray = [
     { name: "leather", lootDesc: "Leather ", title: "Leather Findings:", chart: leatherArray },
     { name: "planks", lootDesc: "Plank ", title: "Plank Findings:", chart: plankArray },
     { name: "logs", lootDesc: "Log ", title: "Long Findings:", chart: logArray },
-    //{ name: "meat", lootDesc: "Meat ", title: "Meat Findings:", chart: meatArray },
+    { name: "meat", lootDesc: "Meat ", title: "Meat Findings:", chart: meatArray },
     //{ name: "underground meat", lootDesc: "Meat ", title: "Meat Findings:", chart: undergroundMeatArray },
     { name: "forest pelts", lootDesc: "Pelt ", title: "Pelt Findings:", chart: forestPeltsArray },
     { name: "forest creature parts", lootDesc: "Claw ", title: "Claw Findings:", chart: forestCreaturePartsArray },

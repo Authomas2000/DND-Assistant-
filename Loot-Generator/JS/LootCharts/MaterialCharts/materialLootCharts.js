@@ -127,3 +127,17 @@ let logArray = [
     //very rare (%0.5 chance to draw one of these)
     { name: "Blight Wood", minRarity: 99.5, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]
+
+//meat Loot Chart (100) (incomplete) (ready to use)
+let meatArray = [
+    //Common (%60 chance to draw one of these items)
+    { name: "Deer Meat (1Lb Chunk)", minRarity: 1, maxRarity: 30, minQty: 1, maxQty: 6, rarity: 1 },
+    { name: "Dog Meat (1Lb Chunk)", minRarity: 30, maxRarity: 60, minQty: 1, maxQty: 6, rarity: 1 },
+    //Uncommon (%30 chance to draw one of these items)
+    { name: "Lamb Meat (1Lb Chunk)", minRarity: 60, maxRarity: 70, minQty: 1, maxQty: 4, rarity: 2 },
+    { name: "Goat Meat (1Lb Chunk)", minRarity: 70, maxRarity: 80, minQty: 1, maxQty: 4, rarity: 2 },
+    { name: "Pig Meat (1Lb Chunk)", minRarity: 80, maxRarity: 90, minQty: 1, maxQty: 4, rarity: 2 },
+    //Rare (%10 chance to draw one of these items)
+    { name: "Bear Meat (1Lb Chunk)", minRarity: 90, maxRarity: 95, minQty: 1, maxQty: 2, rarity: 3 },
+    { name: "Panther Meat (1Lb Chunk)", minRarity: 95, maxRarity: 100, minQty: 1, maxQty: 2, rarity: 3 },
+]
