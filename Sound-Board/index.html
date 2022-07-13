@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>DND (Assistant)</title>
+</head>
+
+<body>
+    <div id="Background"></div>
+    <div id="background"></div>
+    <div class="header">
+        <div class="Margin">Code Entry:</div>
+        <input id="code">
+        <br>
+        <!--Biome Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="biome-dropdown">Biome</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setBiome(event)" id="none">None</div>
+                        <div class="options" onclick="setBiome(event)" id="forest">Forest</div>
+                        <div class="options" onclick="setBiome(event)" id="grassland">Grassland</div>
+                        <div class="options" onclick="setBiome(event)" id="mountain">Mountain</div>
+                        <div class="options" onclick="setBiome(event)" id="underground">Underground</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Creature Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="creature-dropdown">Creature</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setCreature(event)" id="none">None</div>
+                        <div class="options" onclick="setCreature(event)" id="goblin">Goblin</div>
+                        <div class="options" onclick="setCreature(event)" id="orc">Orc</div>
+                        <div class="options" onclick="setCreature(event)" id="cultist">Cultist</div>
+                        <div class="options" onclick="setCreature(event)" id="skeleton">Skeleton</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Container Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="container-dropdown">Container</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setContainer(event)" id="none">None</div>
+                        <div class="options" onclick="setContainer(event)" id="chest">Chest</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Other Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="other-dropdown">Other</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setOther(event)" id="none">None</div>
+                        <div class="options" onclick="setOther(event)" id="coins">Coins</div>
+                        <div class="options" onclick="setOther(event)" id="gems">Gems</div>
+                        <div class="options" onclick="setOther(event)" id="bars">Bars</div>
+                        <div class="options" onclick="setOther(event)" id="ores">Ores</div>
+                        <div class="options" onclick="setOther(event)" id="meat">Meat</div>
+                        <div class="options" onclick="setOther(event)" id="plants">Plants</div>
+                        <div class="options" onclick="setOther(event)" id="pelts">Pelts</div>
+                        <div class="options" onclick="setOther(event)" id="creature parts">Creature Parts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Rarity Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="rarity-dropdown">Rarity [1]</button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-options">
+                    <div class="options" onclick="setRarity(event)" id="1">1</div>
+                    <div class="options" onclick="setRarity(event)" id="2">2</div>
+                    <div class="options" onclick="setRarity(event)" id="3">3</div>
+                </div>
+            </div>
+        </div>
+        <!--Amount Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="amount-dropdown">Amount [1]</button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-options">
+                    <div class="options" onclick="setAmount(event)" id="1">1</div>
+                    <div class="options" onclick="setAmount(event)" id="2">2</div>
+                    <div class="options" onclick="setAmount(event)" id="3">3</div>
+                    <div class="options" onclick="setAmount(event)" id="4">4</div>
+                    <div class="options" onclick="setAmount(event)" id="5">5</div>
+                </div>
+                <div class="dropdown-options">
+                    <div class="options" onclick="setAmount(event)" id="6">6</div>
+                    <div class="options" onclick="setAmount(event)" id="7">7</div>
+                    <div class="options" onclick="setAmount(event)" id="8">8</div>
+                    <div class="options" onclick="setAmount(event)" id="9">9</div>
+                    <div class="options" onclick="setAmount(event)" id="10">10</div>
+                </div>
+            </div>
+        </div>
+        <button onclick="start()">Randomize</button>
+    </div>
+    <div id="InformationTable">
+        <h1 id="Info"></h1>
+        <h2 class="Margin" id="Text1">
+            </h3>
+            <h2 class="Margin" id="Text2">
+                </h3>
+                <h2 class="Margin" id="Text3">
+                    </h3>
+                    <h2 class="Margin" id="Text4">
+                        </h3>
+                        <h2 class="Margin" id="Text5">
+                            </h3>
+                            <h2 class="Margin" id="Text6">
+                                </h3>
+                                <h2 class="Margin" id="Text7">
+                                    </h3>
+                                    <h2 class="Margin" id="Text8">
+                                        </h3>
+                                        <h2 class="Margin" id="Text9">
+                                            </h3>
+                                            <h2 class="Margin" id="Text10">
+                                                </h3>
+                                                <h2 class="Margin" id="Text11">
+                                                    </h3>
+                                                    <h2 class="Margin" id="Text12">
+                                                        </h3>
+    </div>
+    <div id="total-block">
+        <h3 id="total"></h3>
+    </div>
+</body>
+
+<!--Animal Charts-->
+<script src="js/LootCharts/AnimalCharts/animalLootCharts.js"></script>
+
+<!--Enemy Charts-->
+<script src="js/LootCharts/EnemyCharts/enemyLootCharts.js"></script>
+<script src="js/LootCharts/EnemyCharts/forestEnemyLootCharts.js"></script>
+<script src="js/LootCharts/EnemyCharts/grasslandEnemyLootCharts.js"></script>
+<script src="js/LootCharts/EnemyCharts/mountainEnemyLootCharts.js"></script>
+<script src="js/LootCharts/EnemyCharts/undergroundEnemyLootCharts.js"></script>
+
+<!--Magic Item Charts-->
+<script src="js/LootCharts/MagicItemCharts/magicalLootCharts.js"></script>
+
+<!--Material Charts-->
+<script src="js/LootCharts/MaterialCharts/materialLootCharts.js"></script>
+<script src="js/LootCharts/MaterialCharts/forestMaterialLootCharts.js"></script>
+<script src="js/LootCharts/MaterialCharts/grasslandMaterialLootCharts.js"></script>
+<script src="js/LootCharts/MaterialCharts/mountainMaterialLootCharts.js"></script>
+<script src="js/LootCharts/MaterialCharts/undergroundMaterialLootCharts.js"></script>
+
+<!--Plantlife Charts-->
+<script src="js/LootCharts/MaterialCharts/plantLifeLootCharts.js"></script>
+
+<!--Recipe Charts-->
+<script src="js/LootCharts/RecipeCharts/magicalRecipeLootCharts.js"></script>
+<script src="js/LootCharts/RecipeCharts/weaponRecipeLootCharts.js"></script>
+
+<!--Storage Charts-->
+<script src="js/LootCharts/StorageCharts/storageLootCharts.js"></script>
+<script src="js/LootCharts/StorageCharts/forestStorageLootCharts.js"></script>
+<script src="js/LootCharts/StorageCharts/grasslandStorageLootCharts.js"></script>
+<script src="js/LootCharts/StorageCharts/mountainStorageLootCharts.js"></script>
+<script src="js/LootCharts/StorageCharts/undergroundStorageLootCharts.js"></script>
+
+<!--Weapon Charts-->
+<script src="js/LootCharts/WeaponCharts/weaponLootCharts.js"></script>
+
+<!--Other source scripts-->
+<script src="js/LootCharts/otherItemCharts.js"></script>
+<script src="js/LootCharts/liquids.js"></script>
+
+<script src="js/chartSelections.js"></script>
+<script src="js/variables.js"></script>
+<script src="js/callFunctions.js"></script>
+<script src="js/app.js"></script>
+
+</html>

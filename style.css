@@ -30,7 +30,7 @@ body {
 }
 
 #links-menu{
-    margin-left: 390px;
+    margin-left: 250px;
     display: flex;
     padding: .5rem;
     gap: 2rem;

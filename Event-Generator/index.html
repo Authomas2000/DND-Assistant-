@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>DND (Assistant)</title>
+</head>
+
+<body>
+    <div id="Background"></div>
+    <div id="background"></div>
+    <div class="header">
+        <div class="Margin">Code Entry:</div>
+        <input id="code">
+        <br>
+        <!--Biome Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="biome-dropdown">Biome</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setBiome(event)" id="none">None</div>
+                        <div class="options" onclick="setBiome(event)" id="forest">Forest</div>
+                        <div class="options" onclick="setBiome(event)" id="grassland">Grassland</div>
+                        <div class="options" onclick="setBiome(event)" id="mountain">Mountain</div>
+                        <div class="options" onclick="setBiome(event)" id="underground">Underground</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Nature Events Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="creature-dropdown">Nature Events</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setCreature(event)" id="none">None</div>
+                        <div class="options" onclick="setCreature(event)" id="storm">Storm</div>
+                        <div class="options" onclick="setCreature(event)" id="disease">Disease</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Creature Events Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="container-dropdown">Creature Events</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setContainer(event)" id="none">None</div>
+                        <div class="options" onclick="setContainer(event)" id="animal">Animal</div>
+                        <div class="options" onclick="setContainer(event)" id="goblin">Goblin</div>
+                        <div class="options" onclick="setContainer(event)" id="orc">Orc</div>
+                        <div class="options" onclick="setContainer(event)" id="cultist">Cultist</div>
+                        <div class="options" onclick="setContainer(event)" id="skeleton">Skeleton</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Difficulty Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="rarity-dropdown">Danger [1]</button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-options">
+                    <div class="options" onclick="setRarity(event)" id="1">1</div>
+                    <div class="options" onclick="setRarity(event)" id="2">2</div>
+                    <div class="options" onclick="setRarity(event)" id="3">3</div>
+                </div>
+            </div>
+        </div>
+        <!--Amount Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="amount-dropdown">Amount [1]</button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-options">
+                    <div class="options" onclick="setAmount(event)" id="1">1</div>
+                    <div class="options" onclick="setAmount(event)" id="2">2</div>
+                    <div class="options" onclick="setAmount(event)" id="3">3</div>
+                    <div class="options" onclick="setAmount(event)" id="4">4</div>
+                    <div class="options" onclick="setAmount(event)" id="5">5</div>
+                </div>
+                <div class="dropdown-options">
+                    <div class="options" onclick="setAmount(event)" id="6">6</div>
+                    <div class="options" onclick="setAmount(event)" id="7">7</div>
+                    <div class="options" onclick="setAmount(event)" id="8">8</div>
+                    <div class="options" onclick="setAmount(event)" id="9">9</div>
+                    <div class="options" onclick="setAmount(event)" id="10">10</div>
+                </div>
+            </div>
+        </div>
+        <button onclick="start()">Randomize</button>
+    </div>
+    <div id="InformationTable">
+        <h1 id="Info"></h1>
+        <h2 class="Margin" id="Text1">
+            </h3>
+            <h2 class="Margin" id="Text2">
+                </h3>
+                <h2 class="Margin" id="Text3">
+                    </h3>
+                    <h2 class="Margin" id="Text4">
+                        </h3>
+                        <h2 class="Margin" id="Text5">
+                            </h3>
+                            <h2 class="Margin" id="Text6">
+                                </h3>
+                                <h2 class="Margin" id="Text7">
+                                    </h3>
+                                    <h2 class="Margin" id="Text8">
+                                        </h3>
+                                        <h2 class="Margin" id="Text9">
+                                            </h3>
+                                            <h2 class="Margin" id="Text10">
+                                                </h3>
+                                                <h2 class="Margin" id="Text11">
+                                                    </h3>
+                                                    <h2 class="Margin" id="Text12">
+                                                        </h3>
+    </div>
+    <div id="total-block">
+        <h3 id="total"></h3>
+    </div>
+</body>
+
+<!--Other source scripts-->
+<script src="js/Events/otherItemCharts.js"></script>
+
+
+</html>
