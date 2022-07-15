@@ -15,35 +15,35 @@ let magicalItemsArray = [
 
 //Chest Loot Chart (100) (incomplete) (not ready to use)
 let magicalToolsArray = [
-    { name: "Legend Harvest Pickaxe Recipe", minRarity: 1, maxRarity: 33.34, minQty: 1, maxQty: 1, rarity: 3 },
-    { name: "Legend Harvest Axe Recipe", minRarity: 33.34, maxRarity: 63.67, minQty: 1, maxQty: 1, rarity: 3 },
-    { name: "Legend Harvest Sickle Recipe", minRarity: 63.67, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Legend Harvest Pickaxe", minRarity: 1, maxRarity: 33.34, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Legend Harvest Axe", minRarity: 33.34, maxRarity: 63.67, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Legend Harvest Sickle", minRarity: 63.67, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]
 
 //Magical Armament Recipes Array (100) (incomplete) (ready to use)
 let magicalWornAccessorieArray = [
-    { name: "Soul Ring Recipe", minRarity: 1, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Soul Ring", minRarity: 1, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]
 
 //Magical Lures Recipes Chart (100) (incomplete) (ready to use)
 let magicalLuresArray = [
     //common (%90 chance to draw one of these items)
-    { name: "Beast Lure Recipe", minRarity: 1, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Beast Lure", minRarity: 1, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 3 },
     //uncommon (%10 chance to draw one of these items)
-    { name: "Dragon Lure Recipe", minRarity: 90, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Dragon Lure", minRarity: 90, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]
 
 //Magical Sentry Recipes Chart (100) (incomplete) (ready to use)
 let magicalSentriesArray = [
     //common (%70 chance to draw one of these items)
-    { name: "Fire Sentry Recipe", minRarity: 1, maxRarity: 20, minQty: 1, maxQty: 1, rarity: 3 },
-    { name: "Poison Sentry Recipe", minRarity: 20, maxRarity: 40, minQty: 1, maxQty: 1, rarity: 3 },
-    { name: "Lightning Sentry Recipe", minRarity: 40, maxRarity: 55, minQty: 1, maxQty: 1, rarity: 3 },
-    { name: "Spirit Sentry Recipe", minRarity: 55, maxRarity: 70, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Fire Sentry", minRarity: 1, maxRarity: 20, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Poison Sentry", minRarity: 20, maxRarity: 40, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Lightning Sentry", minRarity: 40, maxRarity: 55, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Spirit Sentry", minRarity: 55, maxRarity: 70, minQty: 1, maxQty: 1, rarity: 3 },
     //uncommon (%30 chance to draw one of these items)
-    { name: "Flame Sentry Recipe", minRarity: 70, maxRarity: 80, minQty: 1, maxQty: 1, rarity: 3 },
-    { name: "Lethal Poison Sentry Recipe", minRarity: 80, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 3 },
-    { name: "Thunder & Lightning Sentry Recipe", minRarity: 90, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Flame Sentry", minRarity: 70, maxRarity: 80, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Lethal Poison Sentry", minRarity: 80, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Thunder & Lightning Sentry", minRarity: 90, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]
 
 //Magical gem recipes chart (100) (incomplete) (ready to use)

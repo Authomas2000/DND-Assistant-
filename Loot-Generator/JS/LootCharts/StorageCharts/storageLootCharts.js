@@ -44,3 +44,19 @@ let pouchArray = [
     { name: "coins", minRarity: 1, maxRarity: 95, minQty: 1, maxQty: 2, rarity: 3 },
     { name: "gems", minRarity: 95, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]
+
+//Chest Loot Chart (measured by 10) (incomplete) (ready to use)
+let chestArray = [
+    //common (%60 chance to draw one of these items)
+    { name: "pouch", minRarity: 0, maxRarity: 30, minQty: 3, maxQty: 6, rarity: 3 },
+    { name: "bars", minRarity: 30, maxRarity: 60, minQty: 2, maxQty: 4, rarity: 3 },
+    //uncommon (%30 chance to draw one of these items)
+    { name: "ores", minRarity: 60, maxRarity: 75, minQty: 2, maxQty: 4, rarity: 3 },
+    { name: "weapons", minRarity: 75, maxRarity: 90, minQty: 1, maxQty: 1, rarity: 3 },
+    //rare (%8 chance to draw one of these items)
+    { name: "weapon recipes", minRarity: 90, maxRarity: 94, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "magical recipes", minRarity: 94, maxRarity: 98, minQty: 1, maxQty: 1, rarity: 3 },
+    //very rare (%2 chance to draw one of these items)
+    { name: "potions", minRarity: 98, maxRarity: 99, minQty: 1, maxQty: 2, rarity: 3 },
+    { name: "magical items", minRarity: 99, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+]

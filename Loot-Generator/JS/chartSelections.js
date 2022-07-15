@@ -87,11 +87,11 @@ let chartArray = [
     //{ name: "armor enchantment recipes", lootDesc: "recipe ", title: "recipe Findings:", chart: armorEnchantmentRecipesArray },
 
     //Storage Charts
-    //{ name: "book", lootDesc: "Book ", title: "Book Loot Findings:", chart: bookArray },
+    { name: "book", lootDesc: "Book ", title: "Book Loot Findings:", chart: bookArray },
     //{ name: "sorcerers pouch", lootDesc: "Pouch ", title: "Pouch Loot Findings:", chart: sorcererPouchArray },
     { name: "cultist pouch", lootDesc: "Pouch ", title: "Pouch Loot Findings:", chart: cultistPouchArray },
     { name: "pouch", lootDesc: "Pouch ", title: "Pouch Loot Findings:", chart: pouchArray },
-    //{ name: "chest", lootDesc: "Item ", title: "Chest Loot Findings:", chart: chestArray },
+    { name: "chest", lootDesc: "Item ", title: "Chest Loot Findings:", chart: chestArray },
     //{ name: "big chest", lootDesc: "Item ", title: "Chest Loot Findings:", chart: bigChestArray },
     //{ name: "skeleton chest", lootDesc: "Item ", title: "Chest Loot Findings:", chart: skeletonChestArray },
     //{ name: "lich chest", lootDesc: "Item ", title: "Chest Loot Findings:", chart: lichChestArray },
