@@ -40,9 +40,12 @@ let cultistPouchArray = [
 
 //Chest Loot Chart (measured by 10) (incomplete) (ready to use)
 let pouchArray = [
-    //common (%50 chance to draw one of these items)
-    { name: "coins", minRarity: 1, maxRarity: 95, minQty: 1, maxQty: 2, rarity: 3 },
-    { name: "gems", minRarity: 95, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+    //common (%94 chance to draw one of these items)
+    { name: "coins", minRarity: 0, maxRarity: 94, minQty: 1, maxQty: 2, rarity: 3 },
+    //rare (%5 chance to draw one of these items)
+    { name: "gems", minRarity: 94, maxRarity: 99, minQty: 1, maxQty: 1, rarity: 3 },
+    //very rare (%1 chance to draw one of these items)
+    { name: "geva token", minRarity: 99, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
 ]
 
 //Chest Loot Chart (measured by 10) (incomplete) (ready to use)

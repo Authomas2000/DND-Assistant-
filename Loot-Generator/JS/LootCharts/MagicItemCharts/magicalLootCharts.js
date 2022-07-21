@@ -13,6 +13,33 @@ let magicalItemsArray = [
     { name: "scrolls", minRarity: 350, maxRarity: 400, minQty: 1, maxQty: 1, rarity: 3 },
 ]
 
+//magical odd items array (100) (incomplete) (not ready to use)
+let magicalOddItemsArray = [
+    //Common (%60 chance to draw one of these items)
+    { name: "Sheep Staff", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Lantern of Tracking", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Candle of the Deep", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Enduring Spell Book", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Everbright Lantern", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Ersatz Eye", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Perfume of Bewitching", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Ear Horn of Hearing", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    //Uncommon (%20 chance to draw one of these items)
+    { name: "Inmovable Rod", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Decanter of Endless Water", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Bag of holding", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Stone of Good Luck", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Sending Stones", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Lantern of Revealing", minRarity: 1, maxRarity: 50, minQty: 1, maxQty: 1, rarity: 3 },
+    //Rare (%20 chance to draw one of these items)
+    { name: "Vile blood", minRarity: 50, maxRarity: 100, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Dimensional Shackles", minRarity: 150, maxRarity: 200, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Horn of Blasting", minRarity: 200, maxRarity: 250, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Portable Hole", minRarity: 250, maxRarity: 300, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Horseshoes of Speed", minRarity: 300, maxRarity: 350, minQty: 1, maxQty: 1, rarity: 3 },
+    { name: "Feather Token", minRarity: 350, maxRarity: 400, minQty: 1, maxQty: 1, rarity: 3 },
+]
+
 //Chest Loot Chart (100) (incomplete) (not ready to use)
 let magicalToolsArray = [
     { name: "Legend Harvest Pickaxe", minRarity: 1, maxRarity: 33.34, minQty: 1, maxQty: 1, rarity: 3 },

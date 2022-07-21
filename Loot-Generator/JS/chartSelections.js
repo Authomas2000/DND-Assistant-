@@ -49,8 +49,8 @@ let chartArray = [
 
     //Magic Item Charts
     { name: "magical items", lootDesc: "Item ", title: "Item Findings:", chart: magicalItemsArray },
-    //{ name: "magical odd items", lootDesc: "Item ", title: "Item Findings:", chart: magicalOddItemsArray },
-    //{ name: "magical worn accessories", lootDesc: "Accessory ", title: "Accessory Findings:", chart: magicalWornAccessorieArray },
+    { name: "magical odd items", lootDesc: "Item ", title: "Item Findings:", chart: magicalOddItemsArray },
+    { name: "magical worn accessories", lootDesc: "Accessory ", title: "Accessory Findings:", chart: magicalWornAccessorieArray },
     //{ name: "magical melee weapons", lootDesc: "Weapon ", title: "Weapon Findings:", chart: magicalMeleeWeaponsArray },
     //{ name: "magical ranged weapons", lootDesc: "Weapon ", title: "Weapon Findings:", chart: magicalRangedWeaponsArray },
     //{ name: "magical books", lootDesc: "Book ", title: "Book Findings:", chart: magicalBookArray },
