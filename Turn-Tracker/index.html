@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>DND (Assistant)</title>
+</head>
+
+<body>
+    <div id="Background"></div>
+    <div id="background"></div>
+    <div class="header">
+        <!--Character Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="character-dropdown">Characters</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setCharacter(event)" id="none">None</div>
+                        <div class="options" onclick="setCharacter(event)" id="crilios">Crilios</div>
+                        <div class="options" onclick="setCharacter(event)" id="ulrich">Ulrich</div>
+                        <div class="options" onclick="setCharacter(event)" id="sir patton">Sir Patton</div>
+                        <div class="options" onclick="setCharacter(event)" id="elron">Elron</div>
+                        <div class="options" onclick="setCharacter(event)" id="tonka">Tonka</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Creature Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button id="creature-dropdown">Creatures</button>
+            <div class="dropdown-menu information-grid">
+                <div>
+                    <div class="dropdown-heading">Quick Select</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setCreature(event)" id="none">None</div>
+                        <div class="options" onclick="setCreature(event)" id="minions">Minions</div>
+                        <div class="options" onclick="setCreature(event)" id="solders">Solders</div>
+                        <div class="options" onclick="setCreature(event)" id="captains">Captains</div>
+                        <div class="options" onclick="setCreature(event)" id="boss">Boss</div>
+                    </div>
+                    <div class="dropdown-heading">Common</div>
+                    <div class="dropdown-options">
+                        <div class="options" onclick="setCreature(event)" id="goblin">Goblin</div>
+                        <div class="options" onclick="setCreature(event)" id="orc">Orc</div>
+                        <div class="options" onclick="setCreature(event)" id="cultist">Cultist</div>
+                        <div class="options" onclick="setCreature(event)" id="skeleton">Skeleton</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="Margin">Name:</div>
+        <input id="name" style="width: 180px;">
+        <div>Armor Class:</div>
+        <input id="AC" style="width: 50px;">
+        <div>Initiative:</div>
+        <input id="initiative" style="width: 50px;">
+        <br>
+        <button onclick="start()">Add To List</button> 
+        <button onclick="organize()">Organize</button>
+        <button onclick="next()">Next Creature/Group</button>
+        <button onclick="reset()">Reset List</button>
+    </div>
+    <div id="InformationTable">
+        <h1 class="Margin" id="Text1"></h2>
+        <h1 class="Margin" id="Text2"></h2>
+        <h1 class="Margin" id="Text3"></h2>
+        <h1 class="Margin" id="Text4"></h2>
+        <h1 class="Margin" id="Text5"></h2>
+        <h1 class="Margin" id="Text6"></h2>
+        <h1 class="Margin" id="Text7"></h2>
+        <h1 class="Margin" id="Text8"></h2>
+        <h1 class="Margin" id="Text9"></h2>
+        <h1 class="Margin" id="Text10"></h2>
+    </div>
+</body>
+
+<script src="js/chartSelections.js"></script>
+<script src="js/variables.js"></script>
+<script src="js/callFunctions.js"></script>
+<script src="js/app.js"></script>
+
+</html>
