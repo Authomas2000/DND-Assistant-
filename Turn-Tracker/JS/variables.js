@@ -13,6 +13,7 @@ let selected = {};
 let Name = "";
 let AC = "";
 let initiative = "";
+let sortedByInitiative = [];
 
 //table for relaying info to user
 let infoArray = [

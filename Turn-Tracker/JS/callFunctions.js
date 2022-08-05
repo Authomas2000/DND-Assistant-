@@ -92,4 +92,3 @@ function getNumberForRarity(rarity, i) {
     return i;
 }
 
-

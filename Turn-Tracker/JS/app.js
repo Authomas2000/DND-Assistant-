@@ -58,35 +58,35 @@ function start() {
     Name = creature;
   } else {
     Name = document.getElementById("name").value;
-  } 
+  }
 
   //Check for name and set other attributes
   let i = 0;
-  while (i < selectionArray.length){
-    if(Name == selectionArray[i].Name){
-      if(AC !== ""){
+  while (i < selectionArray.length) {
+    if (Name == selectionArray[i].Name) {
+      if (AC !== "") {
         //Keep inputed AC
-      }else{
+      } else {
         AC = selectionArray[i].AC;
       }
 
-      if(initiative !== 0){
+      if (initiative !== 0) {
         //Keep inputed initiative
-      }else{
+      } else {
         initiative = selectionArray[i].initiative + getRandomIntBetween(0, 20);
       }
       break;
     }
     i++
   }
-  if(initiative == 0){
+  if (initiative == 0) {
     initiative = getRandomIntBetween(0, 20);
   }
 
   //Add creature to array
   i = 0;
-  while(i < infoArray.length){
-    if(infoArray[i].Name == ""){
+  while (i < infoArray.length) {
+    if (infoArray[i].Name == "") {
       infoArray[i].Name = Name;
       infoArray[i].AC = AC;
       infoArray[i].initiative = initiative;
@@ -97,16 +97,33 @@ function start() {
 
   //Display creatures
   i = 0;
-  while(i < infoArray.length){
-    if(infoArray[i].Name !== ""){
-      document.getElementById(infoArray[i].id).innerHTML = capitalize(infoArray[i].Name )+ " | AC: " + infoArray[i].AC + " | Initiative: " + infoArray[i].initiative;
-    }else{
+  while (i < infoArray.length) {
+    if (infoArray[i].Name !== "") {
+      document.getElementById(infoArray[i].id).innerHTML = capitalize(infoArray[i].Name) + " | AC: " + infoArray[i].AC + " | Initiative: " + infoArray[i].initiative;
+    } else {
       break;
     }
     i++
   }
 }
 
-function organize(){
+function organize() {
+  sortedByInitiative = infoArray.sort(function (a, b) {
+    return b.initiative - a.initiative;
+  });
 
+  i = 0;
+  while (i < sortedByInitiative.length) {
+    if (sortedByInitiative[i].Name !== "") {
+      console.log(i);
+      let num = i + 1;
+      num = num.toString()
+      document.getElementById("Text" + num).innerHTML = capitalize(sortedByInitiative[i].Name) + " | AC: " + sortedByInitiative[i].AC + " | Initiative: " + sortedByInitiative[i].initiative;
+    } else {
+      break;
+    }
+    i++
+  }
 }
+
+
