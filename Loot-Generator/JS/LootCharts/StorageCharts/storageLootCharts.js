@@ -11,13 +11,13 @@ let bookArray = [
 
 //Chest Loot Chart (measured by 100) (incomplete) (ready to use)
 let sorcererPouchArray = [
-    //common (%50 chance to draw one of these items)
-    { name: "coins", minRarity: 0, maxRarity: 25, minQty: 2, maxQty: 4, rarity: 3 },
-    { name: "plants", minRarity: 25, maxRarity: 70, minQty: 1, maxQty: 2, rarity: 3   },
+    //common (%80 chance to draw one of these items)
+    { name: "plants", minRarity: 0, maxRarity: 45, minQty: 1, maxQty: 2, rarity: 3   },
+    //Uncommon (%45 chance to draw one of these items)
+    { name: "coins", minRarity: 45, maxRarity: 70, minQty: 2, maxQty: 4, rarity: 3 },
+    //Rare (%20 chance to draw one of these items)
     { name: "gems", minRarity: 70, maxRarity: 90, minQty: 1, maxQty: 2, rarity: 3 },
     { name: "potions", minRarity: 90, maxRarity: 100, minQty: 1, maxQty: 2, rarity: 3   },
-    //Uncommon (%0 chance to draw one of these items)
-    //Rare (%0 chance to draw one of these items)
 ]
 
 //Chest Loot Chart (measured by 10) (incomplete) (ready to use)
