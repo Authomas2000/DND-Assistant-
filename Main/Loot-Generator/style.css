@@ -24,6 +24,22 @@ button {
     gap: 1rem;
 }
 
+.backButton {
+    color: white;
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown.active > .backButton,
+.backButton:hover {
+    color: red;
+}
+
 .link {
     color: white;
     background: none;

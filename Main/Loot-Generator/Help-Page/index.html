@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>DND (Assistant)</title>
+</head>
+
+<body>
+    <div id="Background"></div>
+    <div id="background"></div>
+    <div class="header">
+        <a class="backButton" href="../index.html"><= </a>
+        <div>Code Entry:</div>
+        <input id="code">
+        <b style="font-size: 25px; color: red"> <=OR=></b>
+        <br>
+        <!--Biome Dropdown-->
+        <div class="dropdown2" data-dropdown>
+            <button class="link2" data-dropdown-button id="creature-dropdown">Biome</button>
+        </div>
+        <b style="font-size: 25px; color: red">=> </b>
+        <br>
+        <!--Creature Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link2" data-dropdown-button id="creature-dropdown">Creature</button>
+        </div>
+        <b style="font-size: 25px; color: red">/</b>
+        <!--Container Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link2" data-dropdown-button id="container-dropdown">Container</button>
+        </div>
+        <br>
+        <b style="font-size: 25px; color: red">||</b>
+        <!--Other Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link2" data-dropdown-button id="other-dropdown">Other</button>
+        </div>
+        <b style="font-size: 25px; color: red">||</b>
+        <br>
+        <!--Rarity Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link2" data-dropdown-button id="rarity-dropdown">Rarity [1]</button>
+        </div>
+        <!--Amount Dropdown-->
+        <div class="dropdown" data-dropdown>
+            <button class="link2" data-dropdown-button id="amount-dropdown">Amount [1]</button>
+        </div>
+        <button onclick="start()">Randomize</button>
+    </div>
+    <div id="InformationPrompt">
+        <H2 id="Prompt"></H2>
+        <button id="nextButton" onclick="start()">Next</button>
+    </div>
+</body>
+
+<script src="JS/app.js"></script>
+
+</html>

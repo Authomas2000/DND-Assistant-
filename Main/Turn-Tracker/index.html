@@ -13,24 +13,7 @@
     <div id="Background"></div>
     <div id="background"></div>
     <div class="header">
-        <!--Character Dropdown-->
-        <div class="dropdown" data-dropdown>
-            <button class="link" data-dropdown-button id="character-dropdown">Characters</button>
-            <div class="dropdown-menu information-grid">
-                <div>
-                    <div class="dropdown-heading">Common</div>
-                    <div class="dropdown-options">
-                        <div class="options" onclick="setCharacter(event)" id="none">None</div>
-                        <div class="options" onclick="setCharacter(event)" id="crilios">Crilios</div>
-                        <div class="options" onclick="setCharacter(event)" id="ulrich">Ulrich</div>
-                        <div class="options" onclick="setCharacter(event)" id="sir patton">Sir Patton</div>
-                        <div class="options" onclick="setCharacter(event)" id="elron">Elron</div>
-                        <div class="options" onclick="setCharacter(event)" id="tonka">Tonka</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
+        <a class="link" href="../index.html"><=</a>
         <!--Creature Dropdown-->
         <div class="dropdown" data-dropdown>
             <button class="link" data-dropdown-button id="creature-dropdown">Creatures</button>
@@ -57,18 +40,21 @@
                 </div>
             </div>
         </div>
-        <br>
+        <b style="font-size: 25px; color: red"> <=OR=> </b>
         <div class="Margin">Name:</div>
         <input id="name" style="width: 180px;">
         <div>Armor Class:</div>
         <input id="AC" style="width: 50px;">
         <div>Initiative:</div>
         <input id="initiative" style="width: 50px;">
+        <b style="font-size: 25px; color: red">ADD=></b>
         <br>
         <button onclick="start()">Add To List</button> 
-        <button onclick="organize()">Organize</button>
-        <button onclick="next()">Next Creature/Group</button>
+        <button onclick="organize()">Sort List</button>
+        <!--<button onclick="next()">Next Creature/Group</button>-->
         <button onclick="reset()">Reset List</button>
+        <br>
+        <a class="link" href="Help-Page/index.html">Help</a>
     </div>
     <div id="InformationTable">
         <h1 class="Margin" id="Text1"></h2>

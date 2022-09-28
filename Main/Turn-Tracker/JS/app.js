@@ -16,7 +16,7 @@ document.addEventListener("click", e => {
 })
 
 //Dropdown variable setup
-character_dropdown.addEventListener("character", setCharacter);
+//character_dropdown.addEventListener("character", setCharacter);
 creature_dropdown.addEventListener("creature", setCreature);
 
 //Function to setup biome variables based off of dropdown menu (var = biome)
@@ -105,6 +105,20 @@ function start() {
     }
     i++
   }
+
+  autoClear();
+}
+
+function autoClear() {
+  creature = "";
+    fontToNormal(creature_dropdown);
+    creature_dropdown.innerHTML = "Creatures";
+
+    document.getElementById("AC").value = "";
+
+    document.getElementById("initiative").value = "";
+
+    document.getElementById("name").value = "";
 }
 
 function organize() {
@@ -122,6 +136,17 @@ function organize() {
     } else {
       break;
     }
+    i++
+  }
+}
+
+function reset() {
+  let i = 0;
+  while (i < infoArray.length){
+    infoArray[i].AC = "";
+    infoArray[i].Name = "";
+    infoArray[i].Initiative = "";
+    document.getElementById(infoArray[i].id).innerHTML = "";
     i++
   }
 }

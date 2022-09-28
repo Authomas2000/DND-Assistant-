@@ -24,24 +24,28 @@ amount_dropdown.addEventListener("amount", setAmount);
 
 //Function to setup biome variables based off of dropdown menu (var = biome)
 function setBiome(event) {
-  if(event.target.id == "none"){
+  if (event.target.id == "none") {
     biome = "";
     fontToNormal(biome_dropdown);
     displayInfoTitle();
-  }else{
+  } else {
     biome = event.target.id;
     fontToItalic(biome_dropdown);
     displayInfoTitle();
-  } 
+  }
 }
 
 //Function to setup creature variables based off of dropdown menu (var = creature)
 function setCreature(event) {
-  if(event.target.id == "none"){
+  if (event.target.id == "none") {
     creature = "";
     fontToNormal(creature_dropdown);
     displayInfoTitle();
-  }else{
+  } else {
+    container = "";
+    other = "";
+    fontToNormal(container_dropdown);
+    fontToNormal(other_dropdown);
     creature = event.target.id;
     fontToItalic(creature_dropdown);
     displayInfoTitle();
@@ -50,11 +54,15 @@ function setCreature(event) {
 
 //Function to setup container variables based off of dropdown menu (var = creature)
 function setContainer(event) {
-  if(event.target.id == "none"){
+  if (event.target.id == "none") {
     container = "";
     fontToNormal(container_dropdown);
     displayInfoTitle();
-  }else{
+  } else {
+    creature = "";
+    other = "";
+    fontToNormal(creature_dropdown);
+    fontToNormal(other_dropdown);
     container = event.target.id;
     fontToItalic(container_dropdown);
     displayInfoTitle();
@@ -63,11 +71,15 @@ function setContainer(event) {
 
 //Function to setup container variables based off of dropdown menu (var = creature)
 function setOther(event) {
-  if(event.target.id == "none"){
+  if (event.target.id == "none") {
     other = "";
     fontToNormal(other_dropdown);
     displayInfoTitle();
-  }else{
+  } else {
+    creature = "";
+    container = "";
+    fontToNormal(creature_dropdown);
+    fontToNormal(container_dropdown);
     other = event.target.id;
     fontToItalic(other_dropdown);
     displayInfoTitle();
@@ -78,9 +90,9 @@ function setOther(event) {
 function setRarity(event) {
   rarity_dropdown.innerHTML = "Rarity [" + event.target.id + "]";
   rarity = Number(event.target.id);
-  if (rarity !== 1){
+  if (rarity !== 1) {
     fontToItalic(rarity_dropdown);
-  }else{
+  } else {
     fontToNormal(rarity_dropdown);
   }
 }
@@ -89,9 +101,9 @@ function setRarity(event) {
 function setAmount(event) {
   amount_dropdown.innerHTML = "Amount [" + event.target.id + "]";
   amount = Number(event.target.id);
-  if (amount !== 1){
+  if (amount !== 1) {
     fontToItalic(amount_dropdown);
-  }else{
+  } else {
     fontToNormal(amount_dropdown);
   }
 }
@@ -128,14 +140,15 @@ function checkForCodeInput() {
 
 //function to randomize loot 
 function randomizeLoot() {
+  AlertCheck = 1;
   //while loop counting down chart length
   while (i1 < chartArray.length) {
 
     if (code == chartArray[i1].name) {
       activeLootTable = chartArray[i1].chart;
       maxInt = getMaxInt(activeLootTable);
+      AlertCheck = 0;
       i2 = 0;
-
 
       while (i2 < amount) {
         randomInt = getRandomArbitrary(0, maxInt)
@@ -163,7 +176,7 @@ function randomizeLoot() {
 
                     checkRarity2 = 1;
                     i = 0;
-                    while (checkRarity2 > i){
+                    while (checkRarity2 > i) {
                       randomInt2 = getRandomArbitrary(0, maxInt2)
 
                       i6 = 0;
@@ -193,7 +206,7 @@ function randomizeLoot() {
           }
           i3++
         }
-        
+
         i2 = getNumberForRarity(checkRarity, i2)
 
         console.log("checkRarity: " + checkRarity + " | " + "i2: " + i2);
@@ -207,6 +220,20 @@ function randomizeLoot() {
         }
         i2++
       }
+
+    } else if (i1 == chartArray.length - 1 && AlertCheck == 1) {
+      alert("Chart not found, make sure fields are inputed correctly. See the help page for more information.");
+      creature = "";
+      container = "";
+      other = "";
+      biome = "";
+      fontToNormal(container_dropdown);
+      fontToNormal(other_dropdown);
+      fontToNormal(creature_dropdown);
+      fontToNormal(biome_dropdown);
+      displayInfoTitle();
+      total.innerHTML = "";
+      break;
     }
     i1++
   }
@@ -214,41 +241,43 @@ function randomizeLoot() {
 
 //function to get total and display it
 function getTotal() {
-  //get total for collected loot
-  i = 0;
-  while (i < 10) {
-    i2 = 0;
-    while (i2 < 10) {
-      if (infoArray[i].loot == totalArray[i2].loot) {
-        totalArray[i2].Qty = totalArray[i2].Qty + infoArray[i].Qty;
-        totalArray[i2].loot = infoArray[i].loot
-        break;
-      } else if (i2 == 9) {
-        i3 = 0;
-        while (i3 < 10) {
-          if (totalArray[i3].Qty == 0) {
-            totalArray[i3].Qty = infoArray[i].Qty;
-            totalArray[i3].loot = infoArray[i].loot;
-            break;
+  if (AlertCheck == 0) {
+    //get total for collected loot
+    i = 0;
+    while (i < 10) {
+      i2 = 0;
+      while (i2 < 10) {
+        if (infoArray[i].loot == totalArray[i2].loot) {
+          totalArray[i2].Qty = totalArray[i2].Qty + infoArray[i].Qty;
+          totalArray[i2].loot = infoArray[i].loot
+          break;
+        } else if (i2 == 9) {
+          i3 = 0;
+          while (i3 < 10) {
+            if (totalArray[i3].Qty == 0) {
+              totalArray[i3].Qty = infoArray[i].Qty;
+              totalArray[i3].loot = infoArray[i].loot;
+              break;
+            }
+            i3++
           }
-          i3++
         }
+        i2++
       }
-      i2++
+      i++
     }
-    i++
-  }
 
-  //display total for collected loot
-  i = 0;
-  while (i < 10) {
-    if (totalArray[i].loot !== "") {
-      total.innerHTML = total.innerHTML + " || " + totalArray[i].loot + " x" + totalArray[i].Qty;
+    //display total for collected loot
+    i = 0;
+    while (i < 10) {
+      if (totalArray[i].loot !== "") {
+        total.innerHTML = total.innerHTML + " || " + totalArray[i].loot + " x" + totalArray[i].Qty;
+      }
+      i++
     }
-    i++
+
+    total.innerHTML = "Total: " + total.innerHTML + " ||";
+
+    console.log("-------")
   }
-
-  total.innerHTML = "Total: " + total.innerHTML + " ||";
-
-  console.log("-------")
 }

@@ -29,6 +29,7 @@ let activeLoot = {};
 let activeLoot2 = {};
 let activeLootTable = [];
 let activeLootTable2 = [];
+let AlertCheck = 1;
 let code = "";
 let maxInt = 0;
 let maxInt2 = 0;

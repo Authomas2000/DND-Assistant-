@@ -1,0 +1,13 @@
+v0.01: App created with functional loot generator and turn tracker.
+-   Functional loot generator containing many options for customized loot.
+-   Functional turn tracker with auto initiative for some creatures.
+
+v0.02: A bundle of patches to make life easier and make the application more simple.
+-   Added Help pages on both the loot generator and turn tracker to walk users through how to use it.
+-   Added checks to clear some input fields if they conflict with each other in both the generator and turn tracker.
+-   Added an error message to prompt users if table does not exist in the loot generator.
+-   Added header instructions to refresh users, or give more of an insight into how the application works.
+-   Added a feature to clear all fields when a creature is entered in the turn tracker.
+-   Added back buttons.
+-   Fixed Reset button in the turn tracker to actually reset the list.
+-   Modified the README to be more understandable.
